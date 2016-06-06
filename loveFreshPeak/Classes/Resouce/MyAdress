@@ -1,0 +1,47 @@
+{
+"code": 200,
+"msg": "查询成功",
+"reqid": "ee2fa99ef9866f928b33b19dc417256c",
+"data": [
+{
+"id": "4351645",
+"accept_name": "天空之城zzz",
+"telphone": "18833331111",
+"province_id": "1",
+"province_name": "北京",
+"city_id": "2",
+"city_name": "北京市",
+"district_id": "0",
+"district_name": "",
+"address": "武汉市东西湖区",
+"lng": "116.43704865748",
+"lat": "39.927583644703",
+"lng_map": "116.43704865748",
+"lat_map": "39.927583644703",
+"isnew": "1",
+"version": "2",
+"addr_for_dealer": "航天路",
+"gender": "1"
+},
+{
+"id": "4219659",
+"accept_name": "天空之城zzz",
+"telphone": "18600009999",
+"province_id": "1",
+"province_name": "北京",
+"city_id": "2",
+"city_name": "北京市",
+"district_id": "0",
+"district_name": "",
+"address": "东城区",
+"lng": "116.33386030355",
+"lat": "39.780903420644",
+"lng_map": "116.33386030355",
+"lat_map": "39.780903420644",
+"isnew": "1",
+"version": "2",
+"addr_for_dealer": "",
+"gender": "1"
+}
+]
+}

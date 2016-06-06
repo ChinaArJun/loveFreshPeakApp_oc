@@ -7,10 +7,13 @@
 //
 
 #import "AJHomeViewController.h"
-#import <Masonry.h>
+#import "AJHomeHeadData.h"
+#import "AJHomeHeadView.h"
 
 @interface AJHomeViewController ()<UICollectionViewDataSource,UICollectionViewDelegate>
 @property (nonatomic, strong) UICollectionView *collectionView;
+@property (nonatomic, strong) AJHomeHeadData *homeHeadData;
+@property (nonatomic, strong) AJHomeHeadView *homeheadView;
 @end
 
 @implementation AJHomeViewController
@@ -18,10 +21,14 @@
 #pragma life sycle method
 - (void)viewDidLoad{
     [super viewDidLoad];
-    [self bulidCollectionView];
+    [self addNotification];
+    [self buildCollectionView];
+    [self buildTableHeadView];
 }
-- (void)bulidCollectionView
-{
+- (void)addNotification{
+    
+}
+- (void)buildCollectionView{
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
     layout.minimumInteritemSpacing = 8;
     layout.minimumLineSpacing = 8;
@@ -36,6 +43,16 @@
         make.edges.equalTo(self.view);
     }];
 }
+
+- (void)buildTableHeadView{
+    __weak typeof (self) weakSelf;
+    [AJHomeHeadData loadHeadData:^(AJHomeHeadData *data, NSError *error) {
+        weakSelf.homeHeadData = data;
+        self.homeheadView = [[AJHomeHeadView alloc]init];
+        
+    }];
+}
+
 
 #pragma mark - UICollectionViewDelegate
 

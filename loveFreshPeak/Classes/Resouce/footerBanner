@@ -1,0 +1,69 @@
+{
+	"code": 0,
+	"msg": "success",
+	"reqid": "4960a378a9711f865dd696c8863e0c7e",
+	"data": [{
+		"activity": {
+			"id": "20998",
+			"name": "荒野猎人",
+			"img": "http:\/\/img01.bqstatic.com\/upload\/activity\/activity_v4_20998_1458276248_focus.jpg@90Q",
+			"topimg": "http:\/\/img01.bqstatic.com\/upload\/activity\/activity_v4_20998_1458276248_top.jpg@90Q",
+			"jptype": "1",
+			"sort": 0,
+			"ext_params": {
+				"cityid": "2",
+				"bigids": "2,0",
+				"activitygroup": "huangyelieren"
+			},
+			"show_reload": "1",
+			"hide_cart": "1",
+			"trackid": "",
+			"pre_img": "activity_v4_20998_1458276248"
+		},
+		"id": "5",
+		"img": "http:\/\/img01.bqstatic.com\/\/upload\/activity\/2016031812573179.jpg",
+		"type": "1"
+	}, {
+		"activity": {
+			"id": "20993",
+			"name": "2016拼在路上",
+			"img": "http:\/\/img01.bqstatic.com\/upload\/activity\/activity_v4_20993_1458121218_focus.jpg@90Q",
+			"topimg": "http:\/\/img01.bqstatic.com\/upload\/activity\/activity_v4_20993_1458121218_top.jpg@90Q",
+			"jptype": "1",
+			"sort": 0,
+			"ext_params": {
+				"cityid": "2",
+				"bigids": "2,0",
+				"activitygroup": "2016pinzailushang"
+			},
+			"show_reload": "1",
+			"hide_cart": "1",
+			"trackid": "",
+			"pre_img": "activity_v4_20993_1458121218"
+		},
+		"id": "2",
+		"img": "http:\/\/img01.bqstatic.com\/\/upload\/activity\/201603171007475.jpg",
+		"type": "1"
+	}, {
+		"activity": {
+			"id": "20994",
+			"name": "女王大晒",
+			"img": "http:\/\/img01.bqstatic.com\/upload\/activity\/activity_v4_20994_1458180616_focus.jpg@90Q",
+			"topimg": "http:\/\/img01.bqstatic.com\/upload\/activity\/activity_v4_20994_1458180616_top.jpg@90Q",
+			"jptype": "1",
+			"sort": 0,
+			"ext_params": {
+				"cityid": "2",
+				"bigids": "2,0",
+				"activitygroup": "nvwangdashai2"
+			},
+			"show_reload": "1",
+			"hide_cart": "1",
+			"trackid": "",
+			"pre_img": "activity_v4_20994_1458180616"
+		},
+		"id": "3",
+		"img": "http:\/\/img01.bqstatic.com\/\/upload\/activity\/201603171009184.jpg",
+		"type": "1"
+	}]
+}
