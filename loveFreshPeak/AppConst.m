@@ -9,3 +9,4 @@
 #import <UIKit/UIKit.h>
 
 const CGFloat HomeCollectionViewCellMargin = 10;
+const CGFloat DefaultMargin = 10;

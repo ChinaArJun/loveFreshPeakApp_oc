@@ -23,12 +23,23 @@
         [focusImages addObject:obj.activity.img];
     }];
     
-    [headData.focus.act_rows enumerateObjectsUsingBlock:^(ActRow * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    [headData.icon.act_rows enumerateObjectsUsingBlock:^(ActRow * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         [iconImages addObject:obj.activity.img];
         [iconTitles addObject:obj.activity.name];
     }];
+    NSLog(@"iconImages = %@ headData.focus.act_rows= %@",iconImages,headData.focus.act_rows);
+    _hotView = [[AJHotView alloc]initWithImages:iconImages titles:iconTitles placeHolder:[UIImage imageNamed:@"v2_placeholder_full_size"]];
     
+    [self addSubview:_hotView];
     
+    [_hotView layoutIfNeeded];
+    
+    [_hotView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.equalTo(self);
+        make.top.equalTo(self);
+        make.trailing.equalTo(self);
+        make.height.equalTo(self.mas_width).multipliedBy(0.37);
+    }];
     
     
     
@@ -36,6 +47,8 @@
     return self;
 }
 
-
+- (void)setCallback:(ClikedCallback)callback{
+    self.hotView.clikedback = callback;
+}
 
 @end

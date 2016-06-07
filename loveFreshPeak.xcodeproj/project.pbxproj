@@ -28,6 +28,7 @@
 		15315B6F1D02C4340042BB26 /* 首页热卖 in Resources */ = {isa = PBXBuildFile; fileRef = 15315B5D1D02C4340042BB26 /* 首页热卖 */; };
 		15315B721D02C5220042BB26 /* AJHomeHeadData.m in Sources */ = {isa = PBXBuildFile; fileRef = 15315B711D02C5220042BB26 /* AJHomeHeadData.m */; };
 		15315B751D03160E0042BB26 /* AJHomeHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15315B741D03160E0042BB26 /* AJHomeHeadView.m */; };
+		153557B61D07151B00C18F92 /* AJIconImageTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 153557B51D07151B00C18F92 /* AJIconImageTextView.m */; };
 		154A13DC1CF3509500400E87 /* AJFlashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154A13B71CF3509500400E87 /* AJFlashViewController.m */; };
 		154A13DD1CF3509500400E87 /* AJHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154A13BE1CF3509500400E87 /* AJHomeViewController.m */; };
 		154A13DE1CF3509500400E87 /* AJBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154A13C41CF3509500400E87 /* AJBaseNavigationController.m */; };
@@ -41,6 +42,8 @@
 		154A13EB1CF354EB00400E87 /* AddressData.m in Sources */ = {isa = PBXBuildFile; fileRef = 154A13EA1CF354EB00400E87 /* AddressData.m */; };
 		154A13F01CF3621F00400E87 /* AppConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 154A13EF1CF3621F00400E87 /* AppConst.m */; };
 		154A13F31CF362C100400E87 /* ItemCustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 154A13F21CF362C100400E87 /* ItemCustomButton.m */; };
+		1581EBA81D0711C3003849CD /* AJHotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1581EBA71D0711C3003849CD /* AJHotView.m */; };
+		1595FC7D1D072E7C00558EFB /* AJWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1595FC7C1D072E7C00558EFB /* AJWebViewController.m */; };
 		3F03B49D1CEF82FA0048BE6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F03B49C1CEF82FA0048BE6E /* main.m */; };
 		3F03B4A01CEF82FA0048BE6E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F03B49F1CEF82FA0048BE6E /* AppDelegate.m */; };
 		3F03B4A81CEF82FA0048BE6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F03B4A71CEF82FA0048BE6E /* Assets.xcassets */; };
@@ -73,6 +76,8 @@
 		15315B711D02C5220042BB26 /* AJHomeHeadData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJHomeHeadData.m; sourceTree = "<group>"; };
 		15315B731D03160E0042BB26 /* AJHomeHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJHomeHeadView.h; sourceTree = "<group>"; };
 		15315B741D03160E0042BB26 /* AJHomeHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJHomeHeadView.m; sourceTree = "<group>"; };
+		153557B41D07151B00C18F92 /* AJIconImageTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJIconImageTextView.h; sourceTree = "<group>"; };
+		153557B51D07151B00C18F92 /* AJIconImageTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJIconImageTextView.m; sourceTree = "<group>"; };
 		154A13B61CF3509500400E87 /* AJFlashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJFlashViewController.h; sourceTree = "<group>"; };
 		154A13B71CF3509500400E87 /* AJFlashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJFlashViewController.m; sourceTree = "<group>"; };
 		154A13BD1CF3509500400E87 /* AJHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJHomeViewController.h; sourceTree = "<group>"; };
@@ -100,6 +105,10 @@
 		154A13EF1CF3621F00400E87 /* AppConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppConst.m; sourceTree = "<group>"; };
 		154A13F11CF362C100400E87 /* ItemCustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCustomButton.h; sourceTree = "<group>"; };
 		154A13F21CF362C100400E87 /* ItemCustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCustomButton.m; sourceTree = "<group>"; };
+		1581EBA61D0711C3003849CD /* AJHotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJHotView.h; sourceTree = "<group>"; };
+		1581EBA71D0711C3003849CD /* AJHotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJHotView.m; sourceTree = "<group>"; };
+		1595FC7B1D072E7C00558EFB /* AJWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJWebViewController.h; sourceTree = "<group>"; };
+		1595FC7C1D072E7C00558EFB /* AJWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJWebViewController.m; sourceTree = "<group>"; };
 		3F03B4981CEF82FA0048BE6E /* loveFreshPeak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = loveFreshPeak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F03B49C1CEF82FA0048BE6E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3F03B49E1CEF82FA0048BE6E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -230,6 +239,8 @@
 			children = (
 				154A13BD1CF3509500400E87 /* AJHomeViewController.h */,
 				154A13BE1CF3509500400E87 /* AJHomeViewController.m */,
+				1595FC7B1D072E7C00558EFB /* AJWebViewController.h */,
+				1595FC7C1D072E7C00558EFB /* AJWebViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -257,6 +268,8 @@
 			children = (
 				15315B731D03160E0042BB26 /* AJHomeHeadView.h */,
 				15315B741D03160E0042BB26 /* AJHomeHeadView.m */,
+				1581EBA61D0711C3003849CD /* AJHotView.h */,
+				1581EBA71D0711C3003849CD /* AJHotView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -376,6 +389,8 @@
 				154A13EA1CF354EB00400E87 /* AddressData.m */,
 				154A13F11CF362C100400E87 /* ItemCustomButton.h */,
 				154A13F21CF362C100400E87 /* ItemCustomButton.m */,
+				153557B41D07151B00C18F92 /* AJIconImageTextView.h */,
+				153557B51D07151B00C18F92 /* AJIconImageTextView.m */,
 			);
 			name = "CommonLib(常用扩展)";
 			path = CommonLib;
@@ -574,14 +589,17 @@
 			files = (
 				154A13E11CF3509500400E87 /* AJSelectedAdressViewController.m in Sources */,
 				154A13DD1CF3509500400E87 /* AJHomeViewController.m in Sources */,
+				1595FC7D1D072E7C00558EFB /* AJWebViewController.m in Sources */,
 				154A13E31CF3509500400E87 /* AJAppConst.m in Sources */,
 				154A13E01CF3509500400E87 /* AJMainTabBarController.m in Sources */,
 				154A13EB1CF354EB00400E87 /* AddressData.m in Sources */,
+				1581EBA81D0711C3003849CD /* AJHotView.m in Sources */,
 				154A13E81CF3512300400E87 /* UIBarButtonItem+Button.m in Sources */,
 				3F03B4A01CEF82FA0048BE6E /* AppDelegate.m in Sources */,
 				154A13DF1CF3509500400E87 /* AJBaseViewController.m in Sources */,
 				154A13E41CF3509500400E87 /* AJShoppingVC.m in Sources */,
 				3F03B49D1CEF82FA0048BE6E /* main.m in Sources */,
+				153557B61D07151B00C18F92 /* AJIconImageTextView.m in Sources */,
 				15315B751D03160E0042BB26 /* AJHomeHeadView.m in Sources */,
 				154A13E21CF3509500400E87 /* AJMyViewController.m in Sources */,
 				15315B721D02C5220042BB26 /* AJHomeHeadData.m in Sources */,
@@ -699,6 +717,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rk.loveFreshPeak;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -714,6 +733,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rk.loveFreshPeak;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

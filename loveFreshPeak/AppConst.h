@@ -9,3 +9,6 @@
 #import <UIKit/UIKit.h>
 
 extern const CGFloat HomeCollectionViewCellMargin;
+
+
+extern const CGFloat DefaultMargin;

@@ -7,6 +7,7 @@
 //
 
 #import "AJHomeViewController.h"
+#import "AJWebViewController.h"
 #import "AJHomeHeadData.h"
 #import "AJHomeHeadView.h"
 
@@ -45,14 +46,32 @@
 }
 
 - (void)buildTableHeadView{
-    __weak typeof (self) weakSelf;
+    __weak typeof (self) weakSelf = self;
     [AJHomeHeadData loadHeadData:^(AJHomeHeadData *data, NSError *error) {
         weakSelf.homeHeadData = data;
-        self.homeheadView = [[AJHomeHeadView alloc]init];
-        
+        NSLog(@"data = %@",data);
+        self.homeheadView = [[AJHomeHeadView alloc]initWithHeadData:data];
+        self.homeheadView.callback = ^(HeadViewItemType type,NSInteger tag){
+            [weakSelf showActityDetail:type tag:tag];
+        };
+        [self.view addSubview:self.homeheadView];
+        NSLog(@"self.subviews = %@",self.view.subviews);
+    }];
+    
+    [self.homeheadView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.equalTo(self.view);
+        make.top.equalTo(self.view);
+        make.trailing.equalTo(self.view);
+        make.height.equalTo(self.view.mas_width).multipliedBy(0.37);
     }];
 }
 
+- (void)showActityDetail:(HeadViewItemType)type tag:(NSInteger)tag{
+    ActInfo *actInfo = self.homeHeadData.act_info[type];
+    AJActivity *cativity = actInfo.act_rows[tag].activity;
+    [self.navigationController pushViewController:[[AJWebViewController alloc]initWithActivity:cativity ] animated:YES];
+    
+}
 
 #pragma mark - UICollectionViewDelegate
 

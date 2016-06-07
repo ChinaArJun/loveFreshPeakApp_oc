@@ -13,8 +13,20 @@
 #import "Masonry.h"
 #import "SVProgressHUD.h"
 #import "MJExtension.h"
+#import "UIImageView+WebCache.h"
 
 typedef void (^CompleteBlock)(id data,NSError *error);
+typedef NS_ENUM(NSInteger ,HeadViewItemType){
+    HeadViewItemTypePage,
+    HeadViewItemTypeHot,
+    HeadViewItemTypeHeadLine,
+    HeadViewItemTypeBrand,
+    HeadViewItemTypeScene
+};
 
+typedef void(^ClikedCallback) (HeadViewItemType type,NSInteger tag);
+
+#define Width  [[UIScreen mainScreen] bounds].size.width
+#define Height [[UIScreen mainScreen] bounds].size.height
 
 #endif /* PrefixHeader_h */

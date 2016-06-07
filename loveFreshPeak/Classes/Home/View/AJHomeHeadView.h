@@ -8,10 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #include "AJHomeHeadData.h"
+#import "AJHotView.h"
 
-@interface AJHomeHeadView : NSObject
+@interface AJHomeHeadView : UIView
+@property (nonatomic, strong) AJHotView *hotView;
 - (instancetype)initWithHeadData:(AJHomeHeadData *)headData;
-
+@property (nonatomic, copy) ClikedCallback callback;
 
 
 

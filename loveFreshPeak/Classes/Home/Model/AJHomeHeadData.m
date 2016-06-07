@@ -15,7 +15,7 @@
     NSString *path = [[NSBundle mainBundle]pathForResource:@"首页热卖" ofType:nil];
     NSData *data = [NSData dataWithContentsOfFile:path];
     NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
-    AJHomeHeadData *homeHeadData = [AJHomeHeadData mj_objectWithKeyValues:dict];
+    AJHomeHeadData *homeHeadData = [AJHomeHeadData mj_objectWithKeyValues:dict[@"data"]];
     homeHeadData.focus = homeHeadData.act_info[0];
     homeHeadData.icon = homeHeadData.act_info[1];
     homeHeadData.headline = homeHeadData.act_info[2];
@@ -26,4 +26,28 @@
 
 }
 
++ (NSDictionary *)mj_objectClassInArray {
+    return @{@"act_info":NSStringFromClass([ActInfo class])};
+}
+
 @end
+@implementation ActInfo
+
++ (NSDictionary *)mj_objectClassInArray {
+    return @{@"act_rows":NSStringFromClass([ActRow class])};
+}
+
+@end
+
+@implementation ActRow
+
+
+
+@end
+
+@implementation HeadlineDetail
+
+
+
+@end
+
