@@ -62,7 +62,7 @@
         make.leading.equalTo(self.view);
         make.top.equalTo(self.view);
         make.trailing.equalTo(self.view);
-        make.height.equalTo(self.view.mas_width).multipliedBy(0.37);
+        make.height.equalTo(self.view.mas_width).multipliedBy(0.8);
     }];
 }
 

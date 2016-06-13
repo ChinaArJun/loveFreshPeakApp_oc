@@ -30,7 +30,7 @@
     NSLog(@"iconImages = %@ headData.focus.act_rows= %@ focusImages = %@",iconImages,headData.focus.act_rows,focusImages);
     _scrollerView = [AJScrollerPageView pageScroller:focusImages placeHolderImage:[UIImage imageNamed:@"v2_placeholder_full_size"]];
     _scrollerView.backgroundColor = [UIColor orangeColor];
-    _hotView = [[AJHotView alloc]initWithImages:iconImages titles:iconTitles placeHolder:[UIImage imageNamed:@"v2_placeholder_square"]];
+    _hotView = [[AJHotView alloc]initWithImages:iconImages title:iconTitles placeHolder:[UIImage imageNamed:@"v2_placeholder_square"] ];
     
     [self addSubview:_scrollerView];
     [self addSubview:_hotView];
@@ -41,14 +41,13 @@
     [_scrollerView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(self);
         make.top.equalTo(self);
-        make.height.equalTo(self.mas_width).multipliedBy(0.37);
         make.trailing.equalTo(self);
+        make.height.equalTo(self.mas_width).multipliedBy(0.37);
     }];
-    
     [_hotView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(self);
         make.top.equalTo(_scrollerView.mas_bottom);
         make.trailing.equalTo(self);
+        make.leading.equalTo(self);
         make.height.mas_equalTo(_hotView.bounds.size.height);
     }];
     
@@ -59,7 +58,7 @@
 }
 
 - (void)setCallback:(ClikedCallback)callback{
-    self.hotView.clikedback = callback;
+    self.hotView.callback = callback;
 }
 
 @end

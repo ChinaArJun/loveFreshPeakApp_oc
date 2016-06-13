@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface AJHotView : UIView
-- (instancetype)initWithImages:(NSArray <NSString *>*)images titles:(NSArray *)titles placeHolder:(UIImage *)placeHolder;
-@property (nonatomic, copy) ClikedCallback clikedback;
+- (instancetype)initWithImages:(NSArray<NSString *> *)images title:(NSArray *)titles placeHolder:(UIImage *)image;
+@property (nonatomic, copy) ClikedCallback callback;
 
 @end
