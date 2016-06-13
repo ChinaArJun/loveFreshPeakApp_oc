@@ -33,7 +33,7 @@
 {
     if (self.viewControllers.count > 0) {
         viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:self.backBtn];
-        viewController.hidesBottomBarWhenPushed = YES;
+        viewController.hidesBottomBarWhenPushed = YES; 
     }
     [super pushViewController:viewController animated:animated];
 }

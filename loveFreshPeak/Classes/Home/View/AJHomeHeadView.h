@@ -8,9 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #include "AJHomeHeadData.h"
+#import "AJScrollerPageView.h"
 #import "AJHotView.h"
 
 @interface AJHomeHeadView : UIView
+@property (nonatomic, strong) AJScrollerPageView *scrollerView;
 @property (nonatomic, strong) AJHotView *hotView;
 - (instancetype)initWithHeadData:(AJHomeHeadData *)headData;
 @property (nonatomic, copy) ClikedCallback callback;
