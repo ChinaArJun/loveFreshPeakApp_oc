@@ -31,9 +31,13 @@
     _scrollerView = [AJScrollerPageView pageScroller:focusImages placeHolderImage:[UIImage imageNamed:@"v2_placeholder_full_size"]];
     _scrollerView.backgroundColor = [UIColor orangeColor];
     _hotView = [[AJHotView alloc]initWithImages:iconImages title:iconTitles placeHolder:[UIImage imageNamed:@"v2_placeholder_square"] ];
+    _headlineView = [[AJHeadLineView alloc]init];
+    _headlineView.headline = headData.headline;
     
+    [self addSubview:_headlineView];
     [self addSubview:_scrollerView];
     [self addSubview:_hotView];
+    
     
     [_scrollerView layoutIfNeeded];
     [_hotView layoutIfNeeded];
@@ -50,15 +54,22 @@
         make.leading.equalTo(self);
         make.height.mas_equalTo(_hotView.bounds.size.height);
     }];
+    [_headlineView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(_hotView.mas_bottom);
+        make.leading.equalTo(self);
+        make.trailing.equalTo(self);
+        make.height.mas_equalTo(30);
+    }];
     
-    
-    
+    NSLog(@"_headlineView.frame = %@",NSStringFromCGRect(_headlineView.frame));
     
     return self;
 }
 
 - (void)setCallback:(ClikedCallback)callback{
     self.hotView.callback = callback;
+    self.scrollerView.clikeCall = callback;
+    self.headlineView.callback = callback;
 }
 
 @end

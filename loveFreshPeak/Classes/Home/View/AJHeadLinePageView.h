@@ -1,5 +1,5 @@
 //
-//  AJHeadLineView.h
+//  AJHeadLinePageView.h
 //  loveFreshPeak
 //
 //  Created by ArJun on 16/7/23.
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "AJHomeHeadData.h"
 
-@interface AJHeadLineView : UIView
+@interface AJHeadLinePageView : UIView
 @property (nonatomic, strong) ActInfo *headline;
 @property (nonatomic, copy) ClikedCallback callback;
 @end
