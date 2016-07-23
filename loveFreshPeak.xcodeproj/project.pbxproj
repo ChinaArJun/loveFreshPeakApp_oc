@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		151007DB1D43203000F726F5 /* AJHeadLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 151007DA1D43203000F726F5 /* AJHeadLineView.m */; };
 		1513030E1D04381900C1AEC5 /* AJActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 1513030D1D04381900C1AEC5 /* AJActivity.m */; };
 		15315B5E1D02C4340042BB26 /* AD in Resources */ = {isa = PBXBuildFile; fileRef = 15315B4C1D02C4340042BB26 /* AD */; };
 		15315B5F1D02C4340042BB26 /* FocusURL.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15315B4D1D02C4340042BB26 /* FocusURL.plist */; };
@@ -53,6 +54,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		151007D91D43203000F726F5 /* AJHeadLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJHeadLineView.h; sourceTree = "<group>"; };
+		151007DA1D43203000F726F5 /* AJHeadLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJHeadLineView.m; sourceTree = "<group>"; };
 		1513030C1D04381900C1AEC5 /* AJActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJActivity.h; sourceTree = "<group>"; };
 		1513030D1D04381900C1AEC5 /* AJActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJActivity.m; sourceTree = "<group>"; };
 		15315B4C1D02C4340042BB26 /* AD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AD; sourceTree = "<group>"; };
@@ -275,6 +278,8 @@
 				1581EBA71D0711C3003849CD /* AJHotView.m */,
 				15F3F9171D08331E00C9C0B1 /* AJScrollerPageView.h */,
 				15F3F9181D08331E00C9C0B1 /* AJScrollerPageView.m */,
+				151007D91D43203000F726F5 /* AJHeadLineView.h */,
+				151007DA1D43203000F726F5 /* AJHeadLineView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -613,6 +618,7 @@
 				154A13DE1CF3509500400E87 /* AJBaseNavigationController.m in Sources */,
 				1513030E1D04381900C1AEC5 /* AJActivity.m in Sources */,
 				154A13F31CF362C100400E87 /* ItemCustomButton.m in Sources */,
+				151007DB1D43203000F726F5 /* AJHeadLineView.m in Sources */,
 				154A13F01CF3621F00400E87 /* AppConst.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,11 +10,13 @@
 #import "AJWebViewController.h"
 #import "AJHomeHeadData.h"
 #import "AJHomeHeadView.h"
+#import <UIImageView+WebCache.h>
 
 @interface AJHomeViewController ()<UICollectionViewDataSource,UICollectionViewDelegate>
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, strong) AJHomeHeadData *homeHeadData;
 @property (nonatomic, strong) AJHomeHeadView *homeheadView;
+
 @end
 
 @implementation AJHomeViewController
@@ -25,6 +27,19 @@
     [self addNotification];
     [self buildCollectionView];
     [self buildTableHeadView];
+    [self testView];
+}
+
+- (void)testView{
+    
+    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 300, 100, 100)];
+    [imageView sd_setImageWithURL:[NSURL URLWithString:@"http://gbres.dfcfw.com/Files/picture/20160504/size500/6115B9659230A3A057EDAF7B9D12E689.jpg"]];
+    //    [imageView setImage:pic];
+    [imageView setContentScaleFactor:[[UIScreen mainScreen] scale]];
+    imageView.contentMode =  UIViewContentModeScaleAspectFill;
+    imageView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
+    //    imageView.clipsToBounds  = YES;
+    [self.view addSubview:imageView];
 }
 - (void)addNotification{
     
