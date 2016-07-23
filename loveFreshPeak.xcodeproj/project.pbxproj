@@ -10,6 +10,9 @@
 		151007DB1D43203000F726F5 /* AJHeadLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 151007DA1D43203000F726F5 /* AJHeadLineView.m */; };
 		151007DE1D4321AD00F726F5 /* AJHeadLinePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 151007DD1D4321AD00F726F5 /* AJHeadLinePageView.m */; };
 		151007E11D43666700F726F5 /* AJHeadlineContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 151007E01D43666700F726F5 /* AJHeadlineContentView.m */; };
+		151007E41D43E5E600F726F5 /* AJTitleIconAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 151007E31D43E5E600F726F5 /* AJTitleIconAction.m */; };
+		151007E71D43ED4300F726F5 /* AJMyHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 151007E61D43ED4300F726F5 /* AJMyHeadView.m */; };
+		151007EA1D43F64C00F726F5 /* AJOrderHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 151007E91D43F64C00F726F5 /* AJOrderHeadView.m */; };
 		1513030E1D04381900C1AEC5 /* AJActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 1513030D1D04381900C1AEC5 /* AJActivity.m */; };
 		15315B5E1D02C4340042BB26 /* AD in Resources */ = {isa = PBXBuildFile; fileRef = 15315B4C1D02C4340042BB26 /* AD */; };
 		15315B5F1D02C4340042BB26 /* FocusURL.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15315B4D1D02C4340042BB26 /* FocusURL.plist */; };
@@ -51,7 +54,6 @@
 		3F03B49D1CEF82FA0048BE6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F03B49C1CEF82FA0048BE6E /* main.m */; };
 		3F03B4A01CEF82FA0048BE6E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F03B49F1CEF82FA0048BE6E /* AppDelegate.m */; };
 		3F03B4A81CEF82FA0048BE6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F03B4A71CEF82FA0048BE6E /* Assets.xcassets */; };
-		3F03B4AB1CEF82FA0048BE6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F03B4A91CEF82FA0048BE6E /* LaunchScreen.storyboard */; };
 		FBFE6E4EE832E0569E12461D /* libPods-loveFreshPeak.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55722FD7F23389FABA243990 /* libPods-loveFreshPeak.a */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +64,12 @@
 		151007DD1D4321AD00F726F5 /* AJHeadLinePageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJHeadLinePageView.m; sourceTree = "<group>"; };
 		151007DF1D43666700F726F5 /* AJHeadlineContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJHeadlineContentView.h; sourceTree = "<group>"; };
 		151007E01D43666700F726F5 /* AJHeadlineContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJHeadlineContentView.m; sourceTree = "<group>"; };
+		151007E21D43E5E600F726F5 /* AJTitleIconAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJTitleIconAction.h; sourceTree = "<group>"; };
+		151007E31D43E5E600F726F5 /* AJTitleIconAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJTitleIconAction.m; sourceTree = "<group>"; };
+		151007E51D43ED4300F726F5 /* AJMyHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AJMyHeadView.h; path = ../Controller/AJMyHeadView.h; sourceTree = "<group>"; };
+		151007E61D43ED4300F726F5 /* AJMyHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AJMyHeadView.m; path = ../Controller/AJMyHeadView.m; sourceTree = "<group>"; };
+		151007E81D43F64C00F726F5 /* AJOrderHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJOrderHeadView.h; sourceTree = "<group>"; };
+		151007E91D43F64C00F726F5 /* AJOrderHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJOrderHeadView.m; sourceTree = "<group>"; };
 		1513030C1D04381900C1AEC5 /* AJActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJActivity.h; sourceTree = "<group>"; };
 		1513030D1D04381900C1AEC5 /* AJActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJActivity.m; sourceTree = "<group>"; };
 		15315B4C1D02C4340042BB26 /* AD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AD; sourceTree = "<group>"; };
@@ -126,7 +134,6 @@
 		3F03B49E1CEF82FA0048BE6E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3F03B49F1CEF82FA0048BE6E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3F03B4A71CEF82FA0048BE6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3F03B4AA1CEF82FA0048BE6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F03B4AC1CEF82FA0048BE6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55722FD7F23389FABA243990 /* libPods-loveFreshPeak.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-loveFreshPeak.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CD1EE3C186D0E6D5C5EAF22 /* Pods-loveFreshPeak.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loveFreshPeak.debug.xcconfig"; path = "Pods/Target Support Files/Pods-loveFreshPeak/Pods-loveFreshPeak.debug.xcconfig"; sourceTree = "<group>"; };
@@ -332,6 +339,8 @@
 		154A13CF1CF3509500400E87 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				151007E21D43E5E600F726F5 /* AJTitleIconAction.h */,
+				151007E31D43E5E600F726F5 /* AJTitleIconAction.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -346,6 +355,10 @@
 		154A13D11CF3509500400E87 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				151007E51D43ED4300F726F5 /* AJMyHeadView.h */,
+				151007E61D43ED4300F726F5 /* AJMyHeadView.m */,
+				151007E81D43F64C00F726F5 /* AJOrderHeadView.h */,
+				151007E91D43F64C00F726F5 /* AJOrderHeadView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -453,7 +466,6 @@
 				154A13EF1CF3621F00400E87 /* AppConst.m */,
 				154A13ED1CF360FB00400E87 /* PrefixHeader.h */,
 				3F03B4A71CEF82FA0048BE6E /* Assets.xcassets */,
-				3F03B4A91CEF82FA0048BE6E /* LaunchScreen.storyboard */,
 				3F03B4AC1CEF82FA0048BE6E /* Info.plist */,
 				3F03B49B1CEF82FA0048BE6E /* Supporting Files */,
 			);
@@ -530,7 +542,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				15315B641D02C4340042BB26 /* MyAdress in Resources */,
-				3F03B4AB1CEF82FA0048BE6E /* LaunchScreen.storyboard in Resources */,
 				15315B5E1D02C4340042BB26 /* AD in Resources */,
 				3F03B4A81CEF82FA0048BE6E /* Assets.xcassets in Resources */,
 				15315B6A1D02C4340042BB26 /* SystemMessage in Resources */,
@@ -617,6 +628,7 @@
 				1581EBA81D0711C3003849CD /* AJHotView.m in Sources */,
 				154A13E81CF3512300400E87 /* UIBarButtonItem+Button.m in Sources */,
 				3F03B4A01CEF82FA0048BE6E /* AppDelegate.m in Sources */,
+				151007E41D43E5E600F726F5 /* AJTitleIconAction.m in Sources */,
 				154A13DF1CF3509500400E87 /* AJBaseViewController.m in Sources */,
 				15F3F9191D08331E00C9C0B1 /* AJScrollerPageView.m in Sources */,
 				154A13E41CF3509500400E87 /* AJShoppingVC.m in Sources */,
@@ -625,6 +637,8 @@
 				15315B751D03160E0042BB26 /* AJHomeHeadView.m in Sources */,
 				154A13E21CF3509500400E87 /* AJMyViewController.m in Sources */,
 				15315B721D02C5220042BB26 /* AJHomeHeadData.m in Sources */,
+				151007E71D43ED4300F726F5 /* AJMyHeadView.m in Sources */,
+				151007EA1D43F64C00F726F5 /* AJOrderHeadView.m in Sources */,
 				154A13DC1CF3509500400E87 /* AJFlashViewController.m in Sources */,
 				151007E11D43666700F726F5 /* AJHeadlineContentView.m in Sources */,
 				154A13DE1CF3509500400E87 /* AJBaseNavigationController.m in Sources */,
@@ -636,17 +650,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		3F03B4A91CEF82FA0048BE6E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3F03B4AA1CEF82FA0048BE6E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3F03B4AD1CEF82FA0048BE6E /* Debug */ = {

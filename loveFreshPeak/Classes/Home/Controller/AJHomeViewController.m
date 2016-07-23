@@ -24,6 +24,7 @@
 #pragma life sycle method
 - (void)viewDidLoad{
     [super viewDidLoad];
+    [NSThread sleepForTimeInterval:1];
     [self addNotification];
     [self buildCollectionView];
     [self buildTableHeadView];

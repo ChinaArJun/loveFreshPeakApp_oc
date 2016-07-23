@@ -31,4 +31,5 @@ typedef void(^ClikedCallback) (HeadViewItemType type,NSInteger tag);
 
 #define GrayColor [UIColor colorWithRed:239/255.0 green:239/255.0 blue:239/255.0 alpha:1]
 
+
 #endif /* PrefixHeader_h */
