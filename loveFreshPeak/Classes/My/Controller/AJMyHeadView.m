@@ -34,13 +34,13 @@
         }];
         
         [headImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(self).offset(64);
-            make.centerX.equalTo(self);
+            make.centerY.equalTo(self).offset(-10);
+            make.leading.mas_equalTo(10);
         }];
         
         [phoneLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(headImageView.mas_bottom).offset(10);
-            make.leading.trailing.equalTo(self);
+            make.top.equalTo(headImageView);
+            make.left.equalTo(headImageView.mas_right).offset(5);
             make.height.mas_equalTo(@30);
         }];
     }

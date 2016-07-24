@@ -9,6 +9,8 @@
 #import "AJMyViewController.h"
 #import "AJTitleIconAction.h"
 #import "AJOrderHeadView.h"
+#import "AJFooterBannerData.h"
+#import "AJScrollerPageView.h"
 #import "AJMyHeadView.h"
 #import "AJMenuView.h"
 
@@ -17,6 +19,7 @@
 @property (nonatomic, strong) NSArray *mineMenus;
 @property (nonatomic, strong) AJMyHeadView *mainHeadView;
 @property (nonatomic, strong) UIScrollView *mainScrollView;
+@property (nonatomic, strong) UIView *footerView;
 @end
 
 @implementation AJMyViewController
@@ -25,10 +28,10 @@
     if (!_orderMens) {
         _orderMens = @[
                        [AJTitleIconAction titleIconWith:@"待支付" icon:[UIImage imageNamed:@"icon_daifukuan"] controller:nil tag:0],
-                       [AJTitleIconAction titleIconWith:@"待支付" icon:[UIImage imageNamed:@"icon_daishouhuo"] controller:nil tag:1],
-                         [AJTitleIconAction titleIconWith:@"待支付" icon:[UIImage imageNamed:@"icon_daipingjia"] controller:nil tag:2],
-                        [AJTitleIconAction titleIconWith:@"待支付" icon:[UIImage imageNamed:@"icon_tuikuan"] controller:nil tag:3],
-                             ];
+                       [AJTitleIconAction titleIconWith:@"待收货" icon:[UIImage imageNamed:@"icon_daishouhuo"] controller:nil tag:1],
+                       [AJTitleIconAction titleIconWith:@"待评价" icon:[UIImage imageNamed:@"icon_daipingjia"] controller:nil tag:2],
+                       [AJTitleIconAction titleIconWith:@"退款/售后" icon:[UIImage imageNamed:@"icon_tuikuan"] controller:nil tag:3],
+                       ];
     }
     return _orderMens;
 }
@@ -54,6 +57,7 @@
     [super viewDidLoad];
     [self buildHeadView];
     [self buildScrollView];
+    [self buildFooterView];
 }
 
 - (void)buildHeadView{
@@ -74,7 +78,7 @@
     [self.mainScrollView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.mainHeadView.mas_bottom);
         make.leading.trailing.equalTo(self.view);
-        make.bottom.equalTo(self.view).offset(-50);
+        make.bottom.equalTo(self.view).offset(-49);
     }];
     UIView *contentView = [[UIView alloc]init];
     [self.mainScrollView addSubview:contentView];
@@ -102,14 +106,44 @@
         make.height.mas_equalTo(75);
     }];
     [mineMenuView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(orderMenuView.mas_bottom).offset(5);
+        make.top.equalTo(orderMenuView.mas_bottom).offset(15);
         make.leading.trailing.equalTo(contentView);
         make.height.mas_equalTo(150);
     }];
     
+    _footerView = [[UIView alloc]init];
+    _footerView.backgroundColor = [UIColor whiteColor];
+    [contentView addSubview:_footerView];
+    
+    [_footerView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(mineMenuView.mas_bottom).offset(20);
+        make.leading.trailing.equalTo(contentView);
+        make.height.mas_equalTo(150);
+    }];
+    [contentView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.equalTo(_footerView);
+    }];
 }
 
-
+- (void)buildFooterView{
+    [AJFooterBannerData loadFootBannerData:^(id data, NSError *error) {
+        NSMutableArray *imageUrl = [NSMutableArray array];
+        [data enumerateObjectsUsingBlock:^(AJActivity * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            [imageUrl addObject:obj.img];
+        }];
+        AJScrollerPageView *page = [AJScrollerPageView pageScroller:imageUrl placeHolderImage:[UIImage imageNamed:@"v2_placeholder_full_size"]];
+        [self.footerView addSubview:page];
+        
+        [page mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.equalTo(self.footerView).offset(10);
+            make.trailing.equalTo(self.footerView).offset(-10);
+            make.centerY.equalTo(self.footerView);
+            make.height.mas_equalTo(self.footerView.mas_width).multipliedBy(0.37);
+            
+        }];
+        
+    }];
+}
 
 
 

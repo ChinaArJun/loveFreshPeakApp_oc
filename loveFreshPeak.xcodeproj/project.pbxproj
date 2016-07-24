@@ -52,6 +52,7 @@
 		154A13F31CF362C100400E87 /* ItemCustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 154A13F21CF362C100400E87 /* ItemCustomButton.m */; };
 		1581EBA81D0711C3003849CD /* AJHotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1581EBA71D0711C3003849CD /* AJHotView.m */; };
 		1595FC7D1D072E7C00558EFB /* AJWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1595FC7C1D072E7C00558EFB /* AJWebViewController.m */; };
+		15A77E931D4489720074E50A /* AJFooterBannerData.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A77E921D4489720074E50A /* AJFooterBannerData.m */; };
 		15F3F9191D08331E00C9C0B1 /* AJScrollerPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F3F9181D08331E00C9C0B1 /* AJScrollerPageView.m */; };
 		3F03B49D1CEF82FA0048BE6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F03B49C1CEF82FA0048BE6E /* main.m */; };
 		3F03B4A01CEF82FA0048BE6E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F03B49F1CEF82FA0048BE6E /* AppDelegate.m */; };
@@ -133,6 +134,8 @@
 		1581EBA71D0711C3003849CD /* AJHotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJHotView.m; sourceTree = "<group>"; };
 		1595FC7B1D072E7C00558EFB /* AJWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJWebViewController.h; sourceTree = "<group>"; };
 		1595FC7C1D072E7C00558EFB /* AJWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJWebViewController.m; sourceTree = "<group>"; };
+		15A77E911D4489720074E50A /* AJFooterBannerData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJFooterBannerData.h; sourceTree = "<group>"; };
+		15A77E921D4489720074E50A /* AJFooterBannerData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJFooterBannerData.m; sourceTree = "<group>"; };
 		15F3F9171D08331E00C9C0B1 /* AJScrollerPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJScrollerPageView.h; sourceTree = "<group>"; };
 		15F3F9181D08331E00C9C0B1 /* AJScrollerPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJScrollerPageView.m; sourceTree = "<group>"; };
 		3F03B4981CEF82FA0048BE6E /* loveFreshPeak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = loveFreshPeak.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -369,6 +372,8 @@
 				151007E91D43F64C00F726F5 /* AJOrderHeadView.m */,
 				151007EE1D4465CF00F726F5 /* AJTitleIconView.h */,
 				151007EF1D4465CF00F726F5 /* AJTitleIconView.m */,
+				15A77E911D4489720074E50A /* AJFooterBannerData.h */,
+				15A77E921D4489720074E50A /* AJFooterBannerData.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -631,6 +636,7 @@
 				154A13E11CF3509500400E87 /* AJSelectedAdressViewController.m in Sources */,
 				151007ED1D44631A00F726F5 /* AJMenuView.m in Sources */,
 				154A13DD1CF3509500400E87 /* AJHomeViewController.m in Sources */,
+				15A77E931D4489720074E50A /* AJFooterBannerData.m in Sources */,
 				1595FC7D1D072E7C00558EFB /* AJWebViewController.m in Sources */,
 				154A13E31CF3509500400E87 /* AJAppConst.m in Sources */,
 				151007DE1D4321AD00F726F5 /* AJHeadLinePageView.m in Sources */,
