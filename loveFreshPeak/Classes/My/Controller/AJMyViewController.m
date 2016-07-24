@@ -10,6 +10,7 @@
 #import "AJTitleIconAction.h"
 #import "AJOrderHeadView.h"
 #import "AJMyHeadView.h"
+#import "AJMenuView.h"
 
 @interface AJMyViewController ()
 @property (nonatomic, strong) NSArray *orderMens;
@@ -89,6 +90,23 @@
         make.leading.trailing.equalTo(self.mainScrollView);
         make.height.mas_equalTo(40);
     }];
+    
+    AJMenuView *orderMenuView = [[AJMenuView alloc]initMenu:self.orderMens WithLine:NO];
+    AJMenuView *mineMenuView = [[AJMenuView alloc]initMenu:self.mineMenus WithLine:YES];
+    [contentView addSubview:orderMenuView];
+    [contentView addSubview:mineMenuView];
+    
+    [orderMenuView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(orderHeadView.mas_bottom).offset(1);
+        make.leading.trailing.equalTo(contentView);
+        make.height.mas_equalTo(75);
+    }];
+    [mineMenuView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(orderMenuView.mas_bottom).offset(5);
+        make.leading.trailing.equalTo(contentView);
+        make.height.mas_equalTo(150);
+    }];
+    
 }
 
 

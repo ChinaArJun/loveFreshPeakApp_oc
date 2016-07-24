@@ -13,6 +13,8 @@
 		151007E41D43E5E600F726F5 /* AJTitleIconAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 151007E31D43E5E600F726F5 /* AJTitleIconAction.m */; };
 		151007E71D43ED4300F726F5 /* AJMyHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 151007E61D43ED4300F726F5 /* AJMyHeadView.m */; };
 		151007EA1D43F64C00F726F5 /* AJOrderHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 151007E91D43F64C00F726F5 /* AJOrderHeadView.m */; };
+		151007ED1D44631A00F726F5 /* AJMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 151007EC1D44631A00F726F5 /* AJMenuView.m */; };
+		151007F01D4465CF00F726F5 /* AJTitleIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 151007EF1D4465CF00F726F5 /* AJTitleIconView.m */; };
 		1513030E1D04381900C1AEC5 /* AJActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 1513030D1D04381900C1AEC5 /* AJActivity.m */; };
 		15315B5E1D02C4340042BB26 /* AD in Resources */ = {isa = PBXBuildFile; fileRef = 15315B4C1D02C4340042BB26 /* AD */; };
 		15315B5F1D02C4340042BB26 /* FocusURL.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15315B4D1D02C4340042BB26 /* FocusURL.plist */; };
@@ -70,6 +72,10 @@
 		151007E61D43ED4300F726F5 /* AJMyHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AJMyHeadView.m; path = ../Controller/AJMyHeadView.m; sourceTree = "<group>"; };
 		151007E81D43F64C00F726F5 /* AJOrderHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJOrderHeadView.h; sourceTree = "<group>"; };
 		151007E91D43F64C00F726F5 /* AJOrderHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJOrderHeadView.m; sourceTree = "<group>"; };
+		151007EB1D44631A00F726F5 /* AJMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJMenuView.h; sourceTree = "<group>"; };
+		151007EC1D44631A00F726F5 /* AJMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJMenuView.m; sourceTree = "<group>"; };
+		151007EE1D4465CF00F726F5 /* AJTitleIconView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJTitleIconView.h; sourceTree = "<group>"; };
+		151007EF1D4465CF00F726F5 /* AJTitleIconView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJTitleIconView.m; sourceTree = "<group>"; };
 		1513030C1D04381900C1AEC5 /* AJActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJActivity.h; sourceTree = "<group>"; };
 		1513030D1D04381900C1AEC5 /* AJActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJActivity.m; sourceTree = "<group>"; };
 		15315B4C1D02C4340042BB26 /* AD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AD; sourceTree = "<group>"; };
@@ -355,10 +361,14 @@
 		154A13D11CF3509500400E87 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				151007EB1D44631A00F726F5 /* AJMenuView.h */,
+				151007EC1D44631A00F726F5 /* AJMenuView.m */,
 				151007E51D43ED4300F726F5 /* AJMyHeadView.h */,
 				151007E61D43ED4300F726F5 /* AJMyHeadView.m */,
 				151007E81D43F64C00F726F5 /* AJOrderHeadView.h */,
 				151007E91D43F64C00F726F5 /* AJOrderHeadView.m */,
+				151007EE1D4465CF00F726F5 /* AJTitleIconView.h */,
+				151007EF1D4465CF00F726F5 /* AJTitleIconView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -619,10 +629,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				154A13E11CF3509500400E87 /* AJSelectedAdressViewController.m in Sources */,
+				151007ED1D44631A00F726F5 /* AJMenuView.m in Sources */,
 				154A13DD1CF3509500400E87 /* AJHomeViewController.m in Sources */,
 				1595FC7D1D072E7C00558EFB /* AJWebViewController.m in Sources */,
 				154A13E31CF3509500400E87 /* AJAppConst.m in Sources */,
 				151007DE1D4321AD00F726F5 /* AJHeadLinePageView.m in Sources */,
+				151007F01D4465CF00F726F5 /* AJTitleIconView.m in Sources */,
 				154A13E01CF3509500400E87 /* AJMainTabBarController.m in Sources */,
 				154A13EB1CF354EB00400E87 /* AddressData.m in Sources */,
 				1581EBA81D0711C3003849CD /* AJHotView.m in Sources */,
