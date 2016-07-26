@@ -8,6 +8,8 @@
 
 #import "AJHomeViewController.h"
 #import "AJWebViewController.h"
+#import "AJGoods.h"
+#import "AJHomeCategoryCell.h"
 #import "AJHomeHeadData.h"
 #import "AJHomeHeadView.h"
 #import <UIImageView+WebCache.h>
@@ -16,10 +18,12 @@
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, strong) AJHomeHeadData *homeHeadData;
 @property (nonatomic, strong) AJHomeHeadView *homeheadView;
-
+@property (nonatomic, strong) NSArray<AJGoods *> *freshHots;
 @end
 
 @implementation AJHomeViewController
+#define homeCell @"homeCell"
+#define expandCell @"expandCell"
 
 #pragma life sycle method
 - (void)viewDidLoad{
@@ -28,35 +32,32 @@
     [self addNotification];
     [self buildCollectionView];
     [self buildTableHeadView];
-    [self testView];
-}
-
-- (void)testView{
-    
-    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 300, 100, 100)];
-    [imageView sd_setImageWithURL:[NSURL URLWithString:@"http://gbres.dfcfw.com/Files/picture/20160504/size500/6115B9659230A3A057EDAF7B9D12E689.jpg"]];
-    //    [imageView setImage:pic];
-    [imageView setContentScaleFactor:[[UIScreen mainScreen] scale]];
-    imageView.contentMode =  UIViewContentModeScaleAspectFill;
-    imageView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
-    //    imageView.clipsToBounds  = YES;
-    [self.view addSubview:imageView];
 }
 - (void)addNotification{
-    
+    [AJNotification addObserver:self selector:@selector(homeTableHeadViewHeightDidChange:) name:HomeTableHeadViewHeightDidChange object:nil];
+}
+- (void)homeTableHeadViewHeightDidChange:(NSNotification *)notification{
+    NSLog(@"height = %lf",[notification.object floatValue]);
+    CGFloat height = [notification.object floatValue];
+    CGFloat room = 10;
+    self.homeheadView.frame = CGRectMake(0, -height-room, Width, height);
+    self.collectionView.contentInset = UIEdgeInsetsMake(height+room, 0, 0, 0);
+    self.collectionView.contentOffset = CGPointMake(0, -height-room);
 }
 - (void)buildCollectionView{
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
     layout.minimumInteritemSpacing = 8;
     layout.minimumLineSpacing = 8;
+    layout.itemSize = CGSizeMake(Width, 200);
     layout.sectionInset = UIEdgeInsetsMake(0, HomeCollectionViewCellMargin, 0, HomeCollectionViewCellMargin);
-    self.collectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:layout];
-    self.collectionView.backgroundColor = [UIColor colorWithRed:239/255.0 green:239/255.0 blue:239/255.0 alpha:1];
-    
-    self.collectionView.delegate = self;
-    self.collectionView.dataSource = self;
-    [self.view addSubview:self.collectionView];
-    [self.collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
+    _collectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:layout];
+    _collectionView.backgroundColor = [UIColor colorWithRed:239/255.0 green:239/255.0 blue:239/255.0 alpha:1];
+    [_collectionView registerClass:[AJHomeCategoryCell class] forCellWithReuseIdentifier:homeCell];
+    [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:expandCell];
+    _collectionView.delegate = self;
+    _collectionView.dataSource = self;
+    [self.view addSubview:_collectionView];
+    [_collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view);
     }];
 }
@@ -70,15 +71,13 @@
         self.homeheadView.callback = ^(HeadViewItemType type,NSInteger tag){
             [weakSelf showActityDetail:type tag:tag];
         };
-        [self.view addSubview:self.homeheadView];
+        [self.collectionView addSubview:self.homeheadView];
         NSLog(@"self.subviews = %@",self.view.subviews);
     }];
     
-    [self.homeheadView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(self.view);
-        make.top.equalTo(self.view);
-        make.trailing.equalTo(self.view);
-        make.height.equalTo(self.view.mas_width).multipliedBy(0.8);
+    [GoodsData loadGoodsData:^(NSArray<AJGoods *> *data, NSError *error) {
+        weakSelf.freshHots = data;
+        [self.collectionView reloadData];
     }];
 }
 
@@ -98,18 +97,24 @@
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     if (section==0) {
-//        return sel
-    }else if (section==0){
-        
+        return self.homeHeadData.category.act_rows.count;
+    }else{
+        return self.freshHots.count;
     }
-    return 0;
 }
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    
-    return nil;
-    
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.section == 0) {
+        AJHomeCategoryCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:homeCell forIndexPath:indexPath];
+        cell.backgroundColor = [UIColor redColor];
+        cell.cellInfo = self.homeHeadData.category.act_rows[indexPath.row];
+        return cell;
+    }
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:expandCell forIndexPath:indexPath];
+    return cell;
 }
+
+
 
 
 

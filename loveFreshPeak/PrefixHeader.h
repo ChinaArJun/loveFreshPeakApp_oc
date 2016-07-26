@@ -28,7 +28,7 @@ typedef void(^ClikedCallback) (HeadViewItemType type,NSInteger tag);
 
 #define Width  [[UIScreen mainScreen] bounds].size.width
 #define Height [[UIScreen mainScreen] bounds].size.height
-
+#define AJNotification   [NSNotificationCenter defaultCenter]
 #define GrayColor [UIColor colorWithRed:239/255.0 green:239/255.0 blue:239/255.0 alpha:1]
 
 

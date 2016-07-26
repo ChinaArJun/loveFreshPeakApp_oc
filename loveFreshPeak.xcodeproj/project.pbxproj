@@ -50,6 +50,10 @@
 		154A13EB1CF354EB00400E87 /* AddressData.m in Sources */ = {isa = PBXBuildFile; fileRef = 154A13EA1CF354EB00400E87 /* AddressData.m */; };
 		154A13F01CF3621F00400E87 /* AppConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 154A13EF1CF3621F00400E87 /* AppConst.m */; };
 		154A13F31CF362C100400E87 /* ItemCustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 154A13F21CF362C100400E87 /* ItemCustomButton.m */; };
+		157322171D463E4900ABBDA9 /* AJGoods.m in Sources */ = {isa = PBXBuildFile; fileRef = 157322161D463E4900ABBDA9 /* AJGoods.m */; };
+		1573221D1D46493400ABBDA9 /* AJHomeCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1573221C1D46493400ABBDA9 /* AJHomeCategoryCell.m */; };
+		157322201D464A1000ABBDA9 /* AJHomeCellTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1573221F1D464A1000ABBDA9 /* AJHomeCellTitleView.m */; };
+		157322231D466B9700ABBDA9 /* UIColor+AJExpand.m in Sources */ = {isa = PBXBuildFile; fileRef = 157322221D466B9700ABBDA9 /* UIColor+AJExpand.m */; };
 		1581EBA81D0711C3003849CD /* AJHotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1581EBA71D0711C3003849CD /* AJHotView.m */; };
 		1595FC7D1D072E7C00558EFB /* AJWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1595FC7C1D072E7C00558EFB /* AJWebViewController.m */; };
 		15A77E931D4489720074E50A /* AJFooterBannerData.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A77E921D4489720074E50A /* AJFooterBannerData.m */; };
@@ -130,6 +134,14 @@
 		154A13EF1CF3621F00400E87 /* AppConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppConst.m; sourceTree = "<group>"; };
 		154A13F11CF362C100400E87 /* ItemCustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCustomButton.h; sourceTree = "<group>"; };
 		154A13F21CF362C100400E87 /* ItemCustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCustomButton.m; sourceTree = "<group>"; };
+		157322151D463E4900ABBDA9 /* AJGoods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJGoods.h; sourceTree = "<group>"; };
+		157322161D463E4900ABBDA9 /* AJGoods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJGoods.m; sourceTree = "<group>"; };
+		1573221B1D46493400ABBDA9 /* AJHomeCategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJHomeCategoryCell.h; sourceTree = "<group>"; };
+		1573221C1D46493400ABBDA9 /* AJHomeCategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJHomeCategoryCell.m; sourceTree = "<group>"; };
+		1573221E1D464A1000ABBDA9 /* AJHomeCellTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJHomeCellTitleView.h; sourceTree = "<group>"; };
+		1573221F1D464A1000ABBDA9 /* AJHomeCellTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJHomeCellTitleView.m; sourceTree = "<group>"; };
+		157322211D466B9700ABBDA9 /* UIColor+AJExpand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+AJExpand.h"; path = "loveFreshPeak/Classes/Home/View/UIColor+AJExpand.h"; sourceTree = SOURCE_ROOT; };
+		157322221D466B9700ABBDA9 /* UIColor+AJExpand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+AJExpand.m"; path = "loveFreshPeak/Classes/Home/View/UIColor+AJExpand.m"; sourceTree = SOURCE_ROOT; };
 		1581EBA61D0711C3003849CD /* AJHotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJHotView.h; sourceTree = "<group>"; };
 		1581EBA71D0711C3003849CD /* AJHotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJHotView.m; sourceTree = "<group>"; };
 		1595FC7B1D072E7C00558EFB /* AJWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJWebViewController.h; sourceTree = "<group>"; };
@@ -280,6 +292,8 @@
 				1513030D1D04381900C1AEC5 /* AJActivity.m */,
 				15315B701D02C5220042BB26 /* AJHomeHeadData.h */,
 				15315B711D02C5220042BB26 /* AJHomeHeadData.m */,
+				157322151D463E4900ABBDA9 /* AJGoods.h */,
+				157322161D463E4900ABBDA9 /* AJGoods.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -287,6 +301,8 @@
 		154A13C01CF3509500400E87 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				157322211D466B9700ABBDA9 /* UIColor+AJExpand.h */,
+				157322221D466B9700ABBDA9 /* UIColor+AJExpand.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -306,6 +322,10 @@
 				151007DD1D4321AD00F726F5 /* AJHeadLinePageView.m */,
 				151007DF1D43666700F726F5 /* AJHeadlineContentView.h */,
 				151007E01D43666700F726F5 /* AJHeadlineContentView.m */,
+				1573221B1D46493400ABBDA9 /* AJHomeCategoryCell.h */,
+				1573221C1D46493400ABBDA9 /* AJHomeCategoryCell.m */,
+				1573221E1D464A1000ABBDA9 /* AJHomeCellTitleView.h */,
+				1573221F1D464A1000ABBDA9 /* AJHomeCellTitleView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -636,6 +656,7 @@
 				154A13E11CF3509500400E87 /* AJSelectedAdressViewController.m in Sources */,
 				151007ED1D44631A00F726F5 /* AJMenuView.m in Sources */,
 				154A13DD1CF3509500400E87 /* AJHomeViewController.m in Sources */,
+				157322201D464A1000ABBDA9 /* AJHomeCellTitleView.m in Sources */,
 				15A77E931D4489720074E50A /* AJFooterBannerData.m in Sources */,
 				1595FC7D1D072E7C00558EFB /* AJWebViewController.m in Sources */,
 				154A13E31CF3509500400E87 /* AJAppConst.m in Sources */,
@@ -644,17 +665,20 @@
 				154A13E01CF3509500400E87 /* AJMainTabBarController.m in Sources */,
 				154A13EB1CF354EB00400E87 /* AddressData.m in Sources */,
 				1581EBA81D0711C3003849CD /* AJHotView.m in Sources */,
+				157322171D463E4900ABBDA9 /* AJGoods.m in Sources */,
 				154A13E81CF3512300400E87 /* UIBarButtonItem+Button.m in Sources */,
 				3F03B4A01CEF82FA0048BE6E /* AppDelegate.m in Sources */,
 				151007E41D43E5E600F726F5 /* AJTitleIconAction.m in Sources */,
 				154A13DF1CF3509500400E87 /* AJBaseViewController.m in Sources */,
 				15F3F9191D08331E00C9C0B1 /* AJScrollerPageView.m in Sources */,
+				157322231D466B9700ABBDA9 /* UIColor+AJExpand.m in Sources */,
 				154A13E41CF3509500400E87 /* AJShoppingVC.m in Sources */,
 				3F03B49D1CEF82FA0048BE6E /* main.m in Sources */,
 				153557B61D07151B00C18F92 /* AJIconImageTextView.m in Sources */,
 				15315B751D03160E0042BB26 /* AJHomeHeadView.m in Sources */,
 				154A13E21CF3509500400E87 /* AJMyViewController.m in Sources */,
 				15315B721D02C5220042BB26 /* AJHomeHeadData.m in Sources */,
+				1573221D1D46493400ABBDA9 /* AJHomeCategoryCell.m in Sources */,
 				151007E71D43ED4300F726F5 /* AJMyHeadView.m in Sources */,
 				151007EA1D43F64C00F726F5 /* AJOrderHeadView.m in Sources */,
 				154A13DC1CF3509500400E87 /* AJFlashViewController.m in Sources */,

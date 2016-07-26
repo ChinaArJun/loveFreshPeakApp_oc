@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+extern NSString * const HomeTableHeadViewHeightDidChange;
+
 extern const CGFloat HomeCollectionViewCellMargin;
-
-
 extern const CGFloat DefaultMargin;

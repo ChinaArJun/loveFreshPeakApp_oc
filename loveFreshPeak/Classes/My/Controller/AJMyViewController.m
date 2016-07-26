@@ -135,6 +135,7 @@
         [self.footerView addSubview:page];
         
         [page mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.footerView);
             make.leading.equalTo(self.footerView).offset(10);
             make.trailing.equalTo(self.footerView).offset(-10);
             make.centerY.equalTo(self.footerView);

@@ -66,6 +66,16 @@
     return self;
 }
 
+- (void)setHeight:(CGFloat)height{
+    _height = height;
+    [AJNotification postNotificationName:HomeTableHeadViewHeightDidChange object:[NSNumber numberWithFloat:_height]];
+}
+
+- (void)layoutSubviews{
+    [super layoutSubviews];
+    self.height = CGRectGetMaxY(_headlineView.frame);
+}
+
 - (void)setCallback:(ClikedCallback)callback{
     self.hotView.callback = callback;
     self.scrollerView.clikeCall = callback;

@@ -16,6 +16,8 @@
 @property (nonatomic, strong) AJScrollerPageView *scrollerView;
 @property (nonatomic, strong) AJHotView *hotView;
 @property (nonatomic, strong) AJHeadLineView *headlineView;
+@property (nonatomic, assign) CGFloat height;
+
 - (instancetype)initWithHeadData:(AJHomeHeadData *)headData;
 @property (nonatomic, copy) ClikedCallback callback;
 
