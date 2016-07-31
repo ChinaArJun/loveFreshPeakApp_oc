@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15000F241D4A6EF300E8F9A3 /* AJHomeCellGoodsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15000F231D4A6EF300E8F9A3 /* AJHomeCellGoodsView.m */; };
+		15000F271D4A719B00E8F9A3 /* AJHomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15000F261D4A719B00E8F9A3 /* AJHomeCell.m */; };
+		15000F2A1D4A752300E8F9A3 /* AJBuyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15000F291D4A752300E8F9A3 /* AJBuyView.m */; };
+		15000F2D1D4A757700E8F9A3 /* AJDiscountPriceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15000F2C1D4A757700E8F9A3 /* AJDiscountPriceView.m */; };
 		151007DB1D43203000F726F5 /* AJHeadLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 151007DA1D43203000F726F5 /* AJHeadLineView.m */; };
 		151007DE1D4321AD00F726F5 /* AJHeadLinePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 151007DD1D4321AD00F726F5 /* AJHeadLinePageView.m */; };
 		151007E11D43666700F726F5 /* AJHeadlineContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 151007E01D43666700F726F5 /* AJHeadlineContentView.m */; };
@@ -37,6 +41,8 @@
 		15315B721D02C5220042BB26 /* AJHomeHeadData.m in Sources */ = {isa = PBXBuildFile; fileRef = 15315B711D02C5220042BB26 /* AJHomeHeadData.m */; };
 		15315B751D03160E0042BB26 /* AJHomeHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15315B741D03160E0042BB26 /* AJHomeHeadView.m */; };
 		153557B61D07151B00C18F92 /* AJIconImageTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 153557B51D07151B00C18F92 /* AJIconImageTextView.m */; };
+		153672521D4C878C007752A2 /* AJUserShopCarTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 153672511D4C878C007752A2 /* AJUserShopCarTool.m */; };
+		153672551D4C8AC7007752A2 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 153672541D4C8AC7007752A2 /* NSString+Extension.m */; };
 		154A13DC1CF3509500400E87 /* AJFlashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154A13B71CF3509500400E87 /* AJFlashViewController.m */; };
 		154A13DD1CF3509500400E87 /* AJHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154A13BE1CF3509500400E87 /* AJHomeViewController.m */; };
 		154A13DE1CF3509500400E87 /* AJBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154A13C41CF3509500400E87 /* AJBaseNavigationController.m */; };
@@ -65,6 +71,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15000F221D4A6EF300E8F9A3 /* AJHomeCellGoodsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJHomeCellGoodsView.h; sourceTree = "<group>"; };
+		15000F231D4A6EF300E8F9A3 /* AJHomeCellGoodsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJHomeCellGoodsView.m; sourceTree = "<group>"; };
+		15000F251D4A719B00E8F9A3 /* AJHomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJHomeCell.h; sourceTree = "<group>"; };
+		15000F261D4A719B00E8F9A3 /* AJHomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJHomeCell.m; sourceTree = "<group>"; };
+		15000F281D4A752300E8F9A3 /* AJBuyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJBuyView.h; sourceTree = "<group>"; };
+		15000F291D4A752300E8F9A3 /* AJBuyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJBuyView.m; sourceTree = "<group>"; };
+		15000F2B1D4A757700E8F9A3 /* AJDiscountPriceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJDiscountPriceView.h; sourceTree = "<group>"; };
+		15000F2C1D4A757700E8F9A3 /* AJDiscountPriceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJDiscountPriceView.m; sourceTree = "<group>"; };
 		151007D91D43203000F726F5 /* AJHeadLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJHeadLineView.h; sourceTree = "<group>"; };
 		151007DA1D43203000F726F5 /* AJHeadLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJHeadLineView.m; sourceTree = "<group>"; };
 		151007DC1D4321AD00F726F5 /* AJHeadLinePageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJHeadLinePageView.h; sourceTree = "<group>"; };
@@ -107,6 +121,10 @@
 		15315B741D03160E0042BB26 /* AJHomeHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJHomeHeadView.m; sourceTree = "<group>"; };
 		153557B41D07151B00C18F92 /* AJIconImageTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJIconImageTextView.h; sourceTree = "<group>"; };
 		153557B51D07151B00C18F92 /* AJIconImageTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJIconImageTextView.m; sourceTree = "<group>"; };
+		153672501D4C878C007752A2 /* AJUserShopCarTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJUserShopCarTool.h; sourceTree = "<group>"; };
+		153672511D4C878C007752A2 /* AJUserShopCarTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJUserShopCarTool.m; sourceTree = "<group>"; };
+		153672531D4C8AC7007752A2 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		153672541D4C8AC7007752A2 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
 		154A13B61CF3509500400E87 /* AJFlashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJFlashViewController.h; sourceTree = "<group>"; };
 		154A13B71CF3509500400E87 /* AJFlashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJFlashViewController.m; sourceTree = "<group>"; };
 		154A13BD1CF3509500400E87 /* AJHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJHomeViewController.h; sourceTree = "<group>"; };
@@ -211,7 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				15315B4B1D02C4340042BB26 /* Resouce(Data) */,
-				154A13E51CF350BA00400E87 /* CommonLib(常用扩展) */,
+				154A13E51CF350BA00400E87 /* Common */,
 				154A13B41CF3509500400E87 /* Flash */,
 				154A13BB1CF3509500400E87 /* Home */,
 				154A13C21CF3509500400E87 /* Main */,
@@ -326,6 +344,14 @@
 				1573221C1D46493400ABBDA9 /* AJHomeCategoryCell.m */,
 				1573221E1D464A1000ABBDA9 /* AJHomeCellTitleView.h */,
 				1573221F1D464A1000ABBDA9 /* AJHomeCellTitleView.m */,
+				15000F221D4A6EF300E8F9A3 /* AJHomeCellGoodsView.h */,
+				15000F231D4A6EF300E8F9A3 /* AJHomeCellGoodsView.m */,
+				15000F251D4A719B00E8F9A3 /* AJHomeCell.h */,
+				15000F261D4A719B00E8F9A3 /* AJHomeCell.m */,
+				15000F281D4A752300E8F9A3 /* AJBuyView.h */,
+				15000F291D4A752300E8F9A3 /* AJBuyView.m */,
+				15000F2B1D4A757700E8F9A3 /* AJDiscountPriceView.h */,
+				15000F2C1D4A757700E8F9A3 /* AJDiscountPriceView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -448,7 +474,7 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		154A13E51CF350BA00400E87 /* CommonLib(常用扩展) */ = {
+		154A13E51CF350BA00400E87 /* Common */ = {
 			isa = PBXGroup;
 			children = (
 				154A13E61CF3512300400E87 /* UIBarButtonItem+Button.h */,
@@ -459,8 +485,12 @@
 				154A13F21CF362C100400E87 /* ItemCustomButton.m */,
 				153557B41D07151B00C18F92 /* AJIconImageTextView.h */,
 				153557B51D07151B00C18F92 /* AJIconImageTextView.m */,
+				153672501D4C878C007752A2 /* AJUserShopCarTool.h */,
+				153672511D4C878C007752A2 /* AJUserShopCarTool.m */,
+				153672531D4C8AC7007752A2 /* NSString+Extension.h */,
+				153672541D4C8AC7007752A2 /* NSString+Extension.m */,
 			);
-			name = "CommonLib(常用扩展)";
+			name = Common;
 			path = CommonLib;
 			sourceTree = "<group>";
 		};
@@ -653,6 +683,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15000F2D1D4A757700E8F9A3 /* AJDiscountPriceView.m in Sources */,
 				154A13E11CF3509500400E87 /* AJSelectedAdressViewController.m in Sources */,
 				151007ED1D44631A00F726F5 /* AJMenuView.m in Sources */,
 				154A13DD1CF3509500400E87 /* AJHomeViewController.m in Sources */,
@@ -663,8 +694,11 @@
 				151007DE1D4321AD00F726F5 /* AJHeadLinePageView.m in Sources */,
 				151007F01D4465CF00F726F5 /* AJTitleIconView.m in Sources */,
 				154A13E01CF3509500400E87 /* AJMainTabBarController.m in Sources */,
+				15000F271D4A719B00E8F9A3 /* AJHomeCell.m in Sources */,
+				153672551D4C8AC7007752A2 /* NSString+Extension.m in Sources */,
 				154A13EB1CF354EB00400E87 /* AddressData.m in Sources */,
 				1581EBA81D0711C3003849CD /* AJHotView.m in Sources */,
+				153672521D4C878C007752A2 /* AJUserShopCarTool.m in Sources */,
 				157322171D463E4900ABBDA9 /* AJGoods.m in Sources */,
 				154A13E81CF3512300400E87 /* UIBarButtonItem+Button.m in Sources */,
 				3F03B4A01CEF82FA0048BE6E /* AppDelegate.m in Sources */,
@@ -672,6 +706,8 @@
 				154A13DF1CF3509500400E87 /* AJBaseViewController.m in Sources */,
 				15F3F9191D08331E00C9C0B1 /* AJScrollerPageView.m in Sources */,
 				157322231D466B9700ABBDA9 /* UIColor+AJExpand.m in Sources */,
+				15000F2A1D4A752300E8F9A3 /* AJBuyView.m in Sources */,
+				15000F241D4A6EF300E8F9A3 /* AJHomeCellGoodsView.m in Sources */,
 				154A13E41CF3509500400E87 /* AJShoppingVC.m in Sources */,
 				3F03B49D1CEF82FA0048BE6E /* main.m in Sources */,
 				153557B61D07151B00C18F92 /* AJIconImageTextView.m in Sources */,

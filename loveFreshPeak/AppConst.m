@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 
 NSString * const HomeTableHeadViewHeightDidChange = @"HomeTableHeadViewHeightDidChange";
-
+NSString * const HomeGoodsInventoryProblem = @"HomeGoodsInventoryProblem";
+NSString * const LFBShopCarDidRemoveProductNSNotification = @"LFBShopCarDidRemoveProductNSNotification";
+NSString * const LFBShopCarBuyNumberDidChangeNotification = @"LFBShopCarBuyNumberDidChangeNotification";
 
 const CGFloat HomeCollectionViewCellMargin = 10;
 const CGFloat DefaultMargin = 10;

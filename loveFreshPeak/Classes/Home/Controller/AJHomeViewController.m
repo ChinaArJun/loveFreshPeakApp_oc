@@ -9,6 +9,7 @@
 #import "AJHomeViewController.h"
 #import "AJWebViewController.h"
 #import "AJGoods.h"
+#import "AJHomeCell.h"
 #import "AJHomeCategoryCell.h"
 #import "AJHomeHeadData.h"
 #import "AJHomeHeadView.h"
@@ -48,7 +49,6 @@
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
     layout.minimumInteritemSpacing = 8;
     layout.minimumLineSpacing = 8;
-    layout.itemSize = CGSizeMake(Width, 200);
     layout.sectionInset = UIEdgeInsetsMake(0, HomeCollectionViewCellMargin, 0, HomeCollectionViewCellMargin);
     _collectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:layout];
     _collectionView.backgroundColor = [UIColor colorWithRed:239/255.0 green:239/255.0 blue:239/255.0 alpha:1];
@@ -106,18 +106,29 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section == 0) {
         AJHomeCategoryCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:homeCell forIndexPath:indexPath];
-        cell.backgroundColor = [UIColor redColor];
         cell.cellInfo = self.homeHeadData.category.act_rows[indexPath.row];
         return cell;
     }
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:expandCell forIndexPath:indexPath];
+    
+    AJHomeCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:expandCell forIndexPath:indexPath];
+    cell.backgroundColor = [UIColor orangeColor];
+    cell.goods = self.freshHots[indexPath.row];
     return cell;
+}
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    CGSize itemSize = CGSizeZero;
+    if (indexPath.section == 0) {
+        itemSize = CGSizeMake(Width, 320);
+    }else if (indexPath.section == 1){
+        itemSize = CGSizeMake((Width - HomeCollectionViewCellMargin * 2) * 0.5 - 4, 250);
+    }
+    return itemSize;
 }
 
 
 
 
 
-
 @end
+
 

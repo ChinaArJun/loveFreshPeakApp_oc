@@ -52,9 +52,9 @@
 
 @implementation CategoryDetail
 
-//+(NSDictionary *)mj_objectClassInArray {
-//    return @{@"goods":NSStringFromClass([Goods class])};
-//}
++(NSDictionary *)mj_objectClassInArray {
+    return @{@"goods":NSStringFromClass([AJGoods class])};
+}
 
 @end
 

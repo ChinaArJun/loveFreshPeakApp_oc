@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "AJActivity.h"
+#import "AJGoods.h"
 @class ActInfo;
 @class ActRow;
 @class HeadlineDetail;
@@ -51,7 +52,7 @@
 @interface CategoryDetail : NSObject
 @property (nonatomic,strong) NSString *category_id;
 @property (nonatomic,strong) NSString *name;
-//@property (nonatomic,strong) NSArray<Goods *> *goods;
+@property (nonatomic,strong) NSArray<AJGoods *> *goods;
 @property (nonatomic,strong) NSString *category_color;
 
 @end
