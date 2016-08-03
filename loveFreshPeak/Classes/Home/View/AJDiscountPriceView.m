@@ -37,7 +37,7 @@
             make.centerY.equalTo(self);
         }];
         [_discountLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.equalTo(_moneyLabel.mas_trailing).offset(3);
+            make.leading.equalTo(_moneyLabel.mas_trailing).offset(1);
             make.centerY.equalTo(self);
         }];
         [_lines mas_makeConstraints:^(MASConstraintMaker *make) {

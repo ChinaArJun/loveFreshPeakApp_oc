@@ -41,7 +41,7 @@
         [_goodsView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(_sortImage.mas_bottom);
             make.leading.trailing.equalTo(self);
-            make.height.equalTo(@200);
+            make.bottom.equalTo(self);
         }];
     }
     return self;

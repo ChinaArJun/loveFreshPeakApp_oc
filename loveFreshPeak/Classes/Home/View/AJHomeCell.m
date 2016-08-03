@@ -73,7 +73,7 @@
             make.height.equalTo(@12);
         }];
         [_fineImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(_nameLabel.mas_bottom).offset(5);
+            make.top.equalTo(_nameLabel.mas_bottom).offset(3);
             make.leading.equalTo(_nameLabel);
             make.width.mas_equalTo(25);
             make.height.mas_equalTo(13);
@@ -91,18 +91,16 @@
         }];
         
         [_buyView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.bottom.equalTo(self.mas_bottom).offset(-12);
-            make.trailing.equalTo(self).offset(-5);
-            make.width.mas_equalTo(70);
+            make.bottom.equalTo(self).offset(-2);
+            make.trailing.equalTo(self).offset(-2);
+            make.width.mas_equalTo(65);
             make.height.mas_equalTo(25);
         }];
         [_discountPriceView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.bottom.equalTo(_specificsLabel.mas_bottom).offset(8);
+            make.centerY.equalTo(_buyView).offset(3);
             make.leading.equalTo(self);
             make.trailing.equalTo(_buyView);
         }];
-        
-        
     }
     return self;
 }

@@ -30,6 +30,6 @@ typedef void(^ClikedCallback) (HeadViewItemType type,NSInteger tag);
 #define Height [[UIScreen mainScreen] bounds].size.height
 #define AJNotification   [NSNotificationCenter defaultCenter]
 #define GrayColor [UIColor colorWithRed:239/255.0 green:239/255.0 blue:239/255.0 alpha:1]
-
+#define GrayColor [UIColor colorWithRed:239/255.0 green:239/255.0 blue:239/255.0 alpha:1]
 
 #endif /* PrefixHeader_h */

@@ -63,6 +63,9 @@
 		1581EBA81D0711C3003849CD /* AJHotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1581EBA71D0711C3003849CD /* AJHotView.m */; };
 		1595FC7D1D072E7C00558EFB /* AJWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1595FC7C1D072E7C00558EFB /* AJWebViewController.m */; };
 		15A77E931D4489720074E50A /* AJFooterBannerData.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A77E921D4489720074E50A /* AJFooterBannerData.m */; };
+		15CE1B451D523F2100D5B0B4 /* AJProductsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CE1B441D523F2100D5B0B4 /* AJProductsViewController.m */; };
+		15CE1B481D52400600D5B0B4 /* AJSupermarketSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CE1B471D52400600D5B0B4 /* AJSupermarketSource.m */; };
+		15CE1B4B1D525A0400D5B0B4 /* AJFlashCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CE1B4A1D525A0400D5B0B4 /* AJFlashCell.m */; };
 		15F3F9191D08331E00C9C0B1 /* AJScrollerPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F3F9181D08331E00C9C0B1 /* AJScrollerPageView.m */; };
 		3F03B49D1CEF82FA0048BE6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F03B49C1CEF82FA0048BE6E /* main.m */; };
 		3F03B4A01CEF82FA0048BE6E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F03B49F1CEF82FA0048BE6E /* AppDelegate.m */; };
@@ -125,8 +128,8 @@
 		153672511D4C878C007752A2 /* AJUserShopCarTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJUserShopCarTool.m; sourceTree = "<group>"; };
 		153672531D4C8AC7007752A2 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
 		153672541D4C8AC7007752A2 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
-		154A13B61CF3509500400E87 /* AJFlashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJFlashViewController.h; sourceTree = "<group>"; };
-		154A13B71CF3509500400E87 /* AJFlashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJFlashViewController.m; sourceTree = "<group>"; };
+		154A13B61CF3509500400E87 /* AJFlashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AJFlashViewController.h; path = Controller/AJFlashViewController.h; sourceTree = "<group>"; };
+		154A13B71CF3509500400E87 /* AJFlashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AJFlashViewController.m; path = Controller/AJFlashViewController.m; sourceTree = "<group>"; };
 		154A13BD1CF3509500400E87 /* AJHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJHomeViewController.h; sourceTree = "<group>"; };
 		154A13BE1CF3509500400E87 /* AJHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJHomeViewController.m; sourceTree = "<group>"; };
 		154A13C31CF3509500400E87 /* AJBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJBaseNavigationController.h; sourceTree = "<group>"; };
@@ -166,6 +169,12 @@
 		1595FC7C1D072E7C00558EFB /* AJWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJWebViewController.m; sourceTree = "<group>"; };
 		15A77E911D4489720074E50A /* AJFooterBannerData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJFooterBannerData.h; sourceTree = "<group>"; };
 		15A77E921D4489720074E50A /* AJFooterBannerData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJFooterBannerData.m; sourceTree = "<group>"; };
+		15CE1B431D523F2100D5B0B4 /* AJProductsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AJProductsViewController.h; path = Controller/AJProductsViewController.h; sourceTree = "<group>"; };
+		15CE1B441D523F2100D5B0B4 /* AJProductsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AJProductsViewController.m; path = Controller/AJProductsViewController.m; sourceTree = "<group>"; };
+		15CE1B461D52400600D5B0B4 /* AJSupermarketSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AJSupermarketSource.h; path = loveFreshPeak/Classes/Flash/Controller/AJSupermarketSource.h; sourceTree = SOURCE_ROOT; };
+		15CE1B471D52400600D5B0B4 /* AJSupermarketSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AJSupermarketSource.m; path = loveFreshPeak/Classes/Flash/Controller/AJSupermarketSource.m; sourceTree = SOURCE_ROOT; };
+		15CE1B491D525A0400D5B0B4 /* AJFlashCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJFlashCell.h; sourceTree = "<group>"; };
+		15CE1B4A1D525A0400D5B0B4 /* AJFlashCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJFlashCell.m; sourceTree = "<group>"; };
 		15F3F9171D08331E00C9C0B1 /* AJScrollerPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJScrollerPageView.h; sourceTree = "<group>"; };
 		15F3F9181D08331E00C9C0B1 /* AJScrollerPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJScrollerPageView.m; sourceTree = "<group>"; };
 		3F03B4981CEF82FA0048BE6E /* loveFreshPeak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = loveFreshPeak.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -243,42 +252,24 @@
 		154A13B41CF3509500400E87 /* Flash */ = {
 			isa = PBXGroup;
 			children = (
-				154A13B51CF3509500400E87 /* Controller */,
-				154A13B81CF3509500400E87 /* Model */,
-				154A13B91CF3509500400E87 /* Other */,
-				154A13BA1CF3509500400E87 /* View */,
-			);
-			path = Flash;
-			sourceTree = "<group>";
-		};
-		154A13B51CF3509500400E87 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
 				154A13B61CF3509500400E87 /* AJFlashViewController.h */,
 				154A13B71CF3509500400E87 /* AJFlashViewController.m */,
+				15CE1B431D523F2100D5B0B4 /* AJProductsViewController.h */,
+				15CE1B441D523F2100D5B0B4 /* AJProductsViewController.m */,
+				15CE1B491D525A0400D5B0B4 /* AJFlashCell.h */,
+				15CE1B4A1D525A0400D5B0B4 /* AJFlashCell.m */,
+				154A13B81CF3509500400E87 /* Model */,
 			);
-			path = Controller;
+			path = Flash;
 			sourceTree = "<group>";
 		};
 		154A13B81CF3509500400E87 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				15CE1B461D52400600D5B0B4 /* AJSupermarketSource.h */,
+				15CE1B471D52400600D5B0B4 /* AJSupermarketSource.m */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		154A13B91CF3509500400E87 /* Other */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Other;
-			sourceTree = "<group>";
-		};
-		154A13BA1CF3509500400E87 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		154A13BB1CF3509500400E87 /* Home */ = {
@@ -688,6 +679,7 @@
 				151007ED1D44631A00F726F5 /* AJMenuView.m in Sources */,
 				154A13DD1CF3509500400E87 /* AJHomeViewController.m in Sources */,
 				157322201D464A1000ABBDA9 /* AJHomeCellTitleView.m in Sources */,
+				15CE1B4B1D525A0400D5B0B4 /* AJFlashCell.m in Sources */,
 				15A77E931D4489720074E50A /* AJFooterBannerData.m in Sources */,
 				1595FC7D1D072E7C00558EFB /* AJWebViewController.m in Sources */,
 				154A13E31CF3509500400E87 /* AJAppConst.m in Sources */,
@@ -711,6 +703,7 @@
 				154A13E41CF3509500400E87 /* AJShoppingVC.m in Sources */,
 				3F03B49D1CEF82FA0048BE6E /* main.m in Sources */,
 				153557B61D07151B00C18F92 /* AJIconImageTextView.m in Sources */,
+				15CE1B481D52400600D5B0B4 /* AJSupermarketSource.m in Sources */,
 				15315B751D03160E0042BB26 /* AJHomeHeadView.m in Sources */,
 				154A13E21CF3509500400E87 /* AJMyViewController.m in Sources */,
 				15315B721D02C5220042BB26 /* AJHomeHeadData.m in Sources */,
@@ -718,6 +711,7 @@
 				151007E71D43ED4300F726F5 /* AJMyHeadView.m in Sources */,
 				151007EA1D43F64C00F726F5 /* AJOrderHeadView.m in Sources */,
 				154A13DC1CF3509500400E87 /* AJFlashViewController.m in Sources */,
+				15CE1B451D523F2100D5B0B4 /* AJProductsViewController.m in Sources */,
 				151007E11D43666700F726F5 /* AJHeadlineContentView.m in Sources */,
 				154A13DE1CF3509500400E87 /* AJBaseNavigationController.m in Sources */,
 				1513030E1D04381900C1AEC5 /* AJActivity.m in Sources */,
