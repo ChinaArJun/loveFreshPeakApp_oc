@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+#import "AJHomeHeadData.h"
+
 @interface AJDiscountPriceView : UIView
 
+@property (nonatomic, strong) AJGoods *goods;
 @end

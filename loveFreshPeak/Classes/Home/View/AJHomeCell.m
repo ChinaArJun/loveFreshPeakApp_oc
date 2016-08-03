@@ -27,6 +27,7 @@
 @property (nonatomic,strong) AJDiscountPriceView *discountPriceView;
 /** 选择数量 */
 @property (nonatomic,strong) AJBuyView *buyView;
+
 @property (nonatomic,assign) AJHomeCellType type;
 @end
 
@@ -96,7 +97,7 @@
             make.height.mas_equalTo(25);
         }];
         [_discountPriceView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(_specificsLabel.mas_bottom);
+            make.bottom.equalTo(_specificsLabel.mas_bottom).offset(8);
             make.leading.equalTo(self);
             make.trailing.equalTo(_buyView);
         }];
@@ -112,6 +113,7 @@
     [_goodsImageView sd_setImageWithURL:[NSURL URLWithString:goods.img] placeholderImage:[UIImage imageNamed:@"v2_placeholder_square"]];
     _nameLabel.text = goods.name;
     _specificsLabel.text = goods.specifics;
+    _discountPriceView.goods = goods;
 }
 
 - (void)setZearNeverShow:(BOOL)zearNeverShow{

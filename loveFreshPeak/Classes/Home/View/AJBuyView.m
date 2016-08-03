@@ -112,7 +112,9 @@
     }
 }
 
-
+/**
+ *  增加所点击商品数量
+ */
 - (void)addButtonClick:(UIButton *)btn{
     if (self.goodsIndex >= self.goods.number) {  // 添加商品  如果大于库存数
         [[NSNotificationCenter defaultCenter] postNotificationName:HomeGoodsInventoryProblem object:self.goods.name];
@@ -125,6 +127,9 @@
     [[AJUserShopCarTool sharedInstance] addSupermarkProductToShopCar:self.goods];
     [[NSNotificationCenter defaultCenter] postNotificationName:LFBShopCarBuyNumberDidChangeNotification object:nil];
 }
+/**
+ *  减减所点击商品数量
+ */
 - (void)cutButtonClick:(UIButton *)btn{
     if (self.goodsIndex <= 0) {
         return;

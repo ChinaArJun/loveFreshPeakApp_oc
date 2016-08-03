@@ -11,6 +11,7 @@
 #import "AJHomeViewController.h"
 #import "AJFlashViewController.h"
 #import "AJMyViewController.h"
+#import "AJUserShopCarTool.h"
 #import "AJShoppingVC.h"
 
 @implementation AJMainTabBarController
@@ -18,6 +19,7 @@
 - (void)viewDidLoad{
     [super viewDidLoad];
     [self addMainTabBarController];
+    [self addNotification];
 }
 
 - (void)addMainTabBarController
@@ -27,6 +29,21 @@
     [self setupChildViewController:@"购物车" viewController:[AJShoppingVC new] image:@"shopCart" selectedImage:@"shopCart_r"];
     [self setupChildViewController:@"我的" viewController:[AJMyViewController new] image:@"v2_my" selectedImage:@"v2_my_r"];
     
+}
+- (void)addNotification{
+    [AJNotification addObserver:self selector:@selector(IncreaseShoppingCart) name:LFBShopCarBuyNumberDidChangeNotification object:nil];
+}
+- (void)IncreaseShoppingCart{
+    UIViewController *shoppingVC = self.childViewControllers[2];
+    NSInteger shoppingIndex = [[AJUserShopCarTool sharedInstance]getShopCarGoodsNumber];
+    if (shoppingIndex == 0) {
+        shoppingVC.tabBarItem.badgeValue = nil;
+        return;
+    }
+    shoppingVC.tabBarItem.badgeValue = [NSString stringWithFormat:@"%zd",shoppingIndex];
+}
+- (void)dealloc{
+    [AJNotification removeObserver:self];
 }
 
 - (void)setupChildViewController:(NSString *)title viewController:(UIViewController *)controller image:(NSString *)image selectedImage:(NSString *)selectedImage {
