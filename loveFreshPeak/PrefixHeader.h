@@ -14,6 +14,7 @@
 #import "SVProgressHUD.h"
 #import "MJExtension.h"
 #import "UIImageView+WebCache.h"
+#import "AJAnimationRefreshHeader.h"
 
 typedef void (^CompleteBlock)(id data,NSError *error);
 typedef NS_ENUM(NSInteger ,HeadViewItemType){

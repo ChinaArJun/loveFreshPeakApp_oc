@@ -35,6 +35,7 @@
 
 - (instancetype)initWithFrame:(CGRect)frame{
     if ([super initWithFrame:frame]) {
+        self.backgroundColor =  [UIColor whiteColor];
         _backImageView = [[UIImageView alloc]init];
         _backImageView.contentMode = UIViewContentModeCenter;
         _goodsImageView = [[UIImageView alloc]init];
@@ -106,12 +107,16 @@
 }
 
 - (void)setGoods:(AJGoods *)goods{
-    _goods = goods;
     _buyView.goods = goods;
     [_goodsImageView sd_setImageWithURL:[NSURL URLWithString:goods.img] placeholderImage:[UIImage imageNamed:@"v2_placeholder_square"]];
     _nameLabel.text = goods.name;
     _specificsLabel.text = goods.specifics;
     _discountPriceView.goods = goods;
+    if ([goods.pm_desc isEqualToString:@"买一赠一"]) {
+        self.giveImageView.hidden = NO;
+    }else{
+        self.giveImageView.hidden = YES;
+    }
 }
 
 - (void)setZearNeverShow:(BOOL)zearNeverShow{

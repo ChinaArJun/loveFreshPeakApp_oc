@@ -56,6 +56,8 @@
 		154A13EB1CF354EB00400E87 /* AddressData.m in Sources */ = {isa = PBXBuildFile; fileRef = 154A13EA1CF354EB00400E87 /* AddressData.m */; };
 		154A13F01CF3621F00400E87 /* AppConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 154A13EF1CF3621F00400E87 /* AppConst.m */; };
 		154A13F31CF362C100400E87 /* ItemCustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 154A13F21CF362C100400E87 /* ItemCustomButton.m */; };
+		155F49DD1D58FC7A00722A49 /* AJAnimationRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 155F49DC1D58FC7A00722A49 /* AJAnimationRefreshHeader.m */; };
+		155F49E31D58FF6500722A49 /* AJGoodsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 155F49E21D58FF6500722A49 /* AJGoodsCell.m */; };
 		157322171D463E4900ABBDA9 /* AJGoods.m in Sources */ = {isa = PBXBuildFile; fileRef = 157322161D463E4900ABBDA9 /* AJGoods.m */; };
 		1573221D1D46493400ABBDA9 /* AJHomeCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1573221C1D46493400ABBDA9 /* AJHomeCategoryCell.m */; };
 		157322201D464A1000ABBDA9 /* AJHomeCellTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1573221F1D464A1000ABBDA9 /* AJHomeCellTitleView.m */; };
@@ -155,6 +157,10 @@
 		154A13EF1CF3621F00400E87 /* AppConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppConst.m; sourceTree = "<group>"; };
 		154A13F11CF362C100400E87 /* ItemCustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCustomButton.h; sourceTree = "<group>"; };
 		154A13F21CF362C100400E87 /* ItemCustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCustomButton.m; sourceTree = "<group>"; };
+		155F49DB1D58FC7A00722A49 /* AJAnimationRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJAnimationRefreshHeader.h; sourceTree = "<group>"; };
+		155F49DC1D58FC7A00722A49 /* AJAnimationRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJAnimationRefreshHeader.m; sourceTree = "<group>"; };
+		155F49E11D58FF6500722A49 /* AJGoodsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJGoodsCell.h; sourceTree = "<group>"; };
+		155F49E21D58FF6500722A49 /* AJGoodsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJGoodsCell.m; sourceTree = "<group>"; };
 		157322151D463E4900ABBDA9 /* AJGoods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJGoods.h; sourceTree = "<group>"; };
 		157322161D463E4900ABBDA9 /* AJGoods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJGoods.m; sourceTree = "<group>"; };
 		1573221B1D46493400ABBDA9 /* AJHomeCategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJHomeCategoryCell.h; sourceTree = "<group>"; };
@@ -258,6 +264,8 @@
 				15CE1B441D523F2100D5B0B4 /* AJProductsViewController.m */,
 				15CE1B491D525A0400D5B0B4 /* AJFlashCell.h */,
 				15CE1B4A1D525A0400D5B0B4 /* AJFlashCell.m */,
+				155F49E11D58FF6500722A49 /* AJGoodsCell.h */,
+				155F49E21D58FF6500722A49 /* AJGoodsCell.m */,
 				154A13B81CF3509500400E87 /* Model */,
 			);
 			path = Flash;
@@ -480,6 +488,8 @@
 				153672511D4C878C007752A2 /* AJUserShopCarTool.m */,
 				153672531D4C8AC7007752A2 /* NSString+Extension.h */,
 				153672541D4C8AC7007752A2 /* NSString+Extension.m */,
+				155F49DB1D58FC7A00722A49 /* AJAnimationRefreshHeader.h */,
+				155F49DC1D58FC7A00722A49 /* AJAnimationRefreshHeader.m */,
 			);
 			name = Common;
 			path = CommonLib;
@@ -681,6 +691,7 @@
 				157322201D464A1000ABBDA9 /* AJHomeCellTitleView.m in Sources */,
 				15CE1B4B1D525A0400D5B0B4 /* AJFlashCell.m in Sources */,
 				15A77E931D4489720074E50A /* AJFooterBannerData.m in Sources */,
+				155F49E31D58FF6500722A49 /* AJGoodsCell.m in Sources */,
 				1595FC7D1D072E7C00558EFB /* AJWebViewController.m in Sources */,
 				154A13E31CF3509500400E87 /* AJAppConst.m in Sources */,
 				151007DE1D4321AD00F726F5 /* AJHeadLinePageView.m in Sources */,
@@ -705,6 +716,7 @@
 				153557B61D07151B00C18F92 /* AJIconImageTextView.m in Sources */,
 				15CE1B481D52400600D5B0B4 /* AJSupermarketSource.m in Sources */,
 				15315B751D03160E0042BB26 /* AJHomeHeadView.m in Sources */,
+				155F49DD1D58FC7A00722A49 /* AJAnimationRefreshHeader.m in Sources */,
 				154A13E21CF3509500400E87 /* AJMyViewController.m in Sources */,
 				15315B721D02C5220042BB26 /* AJHomeHeadData.m in Sources */,
 				1573221D1D46493400ABBDA9 /* AJHomeCategoryCell.m in Sources */,

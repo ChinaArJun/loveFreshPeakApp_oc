@@ -23,8 +23,8 @@
 @end
 
 @implementation AJHomeViewController
-#define homeCell @"homeCell"
-#define expandCell @"expandCell"
+static NSString  *homeCell = @"homeCell";
+static NSString  *expandCell = @"expandCell";
 
 #pragma life sycle method
 - (void)viewDidLoad{
@@ -42,7 +42,7 @@
     CGFloat height = [notification.object floatValue];
     CGFloat room = 10;
     self.homeheadView.frame = CGRectMake(0, -height-room, Width, height);
-    self.collectionView.contentInset = UIEdgeInsetsMake(height+room, 0, 0, 0);
+    self.collectionView.contentInset = UIEdgeInsetsMake(height+room, 0, 100, 0);
     self.collectionView.contentOffset = CGPointMake(0, -height-room);
 }
 - (void)buildCollectionView{
@@ -53,7 +53,7 @@
     _collectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:layout];
     _collectionView.backgroundColor = [UIColor colorWithRed:239/255.0 green:239/255.0 blue:239/255.0 alpha:1];
     [_collectionView registerClass:[AJHomeCategoryCell class] forCellWithReuseIdentifier:homeCell];
-    [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:expandCell];
+    [_collectionView registerClass:[AJHomeCell class] forCellWithReuseIdentifier:expandCell];
     _collectionView.delegate = self;
     _collectionView.dataSource = self;
     [self.view addSubview:_collectionView];
@@ -111,8 +111,9 @@
     }
     
     AJHomeCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:expandCell forIndexPath:indexPath];
-    cell.backgroundColor = [UIColor orangeColor];
-    cell.goods = self.freshHots[indexPath.row];
+    NSLog(@"self.freshHots[indexPath.row] = %@",self.freshHots[indexPath.row]);
+    AJGoods *goods = self.freshHots[indexPath.row];
+    cell.goods = goods;
     return cell;
 }
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -120,7 +121,7 @@
     if (indexPath.section == 0) {
         itemSize = CGSizeMake(Width, 330);
     }else if (indexPath.section == 1){
-        itemSize = CGSizeMake((Width - HomeCollectionViewCellMargin * 2) * 0.5 - 4, 250);
+        itemSize = CGSizeMake((Width - HomeCollectionViewCellMargin * 2) * 0.5 - 4, 260);
     }
     return itemSize;
 }
