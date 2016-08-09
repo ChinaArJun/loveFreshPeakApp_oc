@@ -7,8 +7,7 @@
 //
 
 #import "AJHomeCategoryCell.h"
-#import "AJHomeCellTitleView.h"
-#import "AJHomeCellGoodsView.h"
+
 
 @interface AJHomeCategoryCell ()
 @property (nonatomic, strong) AJHomeCellTitleView *titleView;
@@ -54,5 +53,8 @@
     self.goodsView.actRow = cellInfo;
     [self.sortImage sd_setImageWithURL:[NSURL URLWithString:cellInfo.activity.img] placeholderImage:[UIImage imageNamed:cellInfo.category_detail.name]];
 }
-
+- (void)setCellback:(ClikedCellback)cellback{
+    _cellback = cellback;
+    self.goodsView.cellback = cellback;
+}
 @end

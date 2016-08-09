@@ -26,6 +26,10 @@
 static NSString  *homeCell = @"homeCell";
 static NSString  *expandCell = @"expandCell";
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [[BaseTabBarViewController sharedController] hidesTabBar:NO animated:YES];
+}
 #pragma life sycle method
 - (void)viewDidLoad{
     [super viewDidLoad];
@@ -106,6 +110,14 @@ static NSString  *expandCell = @"expandCell";
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section == 0) {
         AJHomeCategoryCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:homeCell forIndexPath:indexPath];
+        __weak typeof(self) weakSelf = self;
+        cell.cellback = ^(AJGoods *goods){
+            UIViewController *goodsVc = [[UIViewController alloc]init];
+            goodsVc.title = goods.name;
+            goodsVc.view.backgroundColor = [UIColor whiteColor];
+            goodsVc.hidesBottomBarWhenPushed = YES;
+            [weakSelf.navigationController pushViewController:goodsVc animated:YES];
+        };
         cell.cellInfo = self.homeHeadData.category.act_rows[indexPath.row];
         return cell;
     }

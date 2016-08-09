@@ -7,7 +7,7 @@
 //
 
 #import "AJHomeCellGoodsView.h"
-#import "AJHomeCell.h"
+
 
 #define maxCount 3
 @implementation AJHomeCellGoodsView
@@ -48,6 +48,15 @@
         AJHomeCell *cell = self.subviews[i];
         cell.zearNeverShow = YES;
         cell.goods = actRow.category_detail.goods[i];
+        
+    }
+}
+- (void)setCellback:(ClikedCellback)cellback{
+    _cellback = cellback;
+    for (int i = 0; i < self.subviews.count; ++i) {
+        // 设置数据
+        AJHomeCell *cell = self.subviews[i];
+        cell.cellback = cellback;
     }
 }
 

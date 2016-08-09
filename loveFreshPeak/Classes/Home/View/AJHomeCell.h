@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "AJGoods.h"
+typedef void(^ClikedCellback) (AJGoods *goods);
 
 typedef enum : NSUInteger {
     AJHomeCellTypeVerticalScreen,
@@ -20,4 +21,5 @@ typedef enum : NSUInteger {
  * 不显示减号
  */
 @property (nonatomic, assign) BOOL zearNeverShow;
+@property (nonatomic, copy) ClikedCellback cellback;
 @end

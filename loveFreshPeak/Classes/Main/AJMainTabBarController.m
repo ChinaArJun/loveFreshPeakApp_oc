@@ -22,8 +22,12 @@
     [self addNotification];
 }
 
+
+
 - (void)addMainTabBarController
 {
+    
+    
     [self setupChildViewController:@"首页" viewController:[AJHomeViewController new] image:@"v2_home" selectedImage:@"v2_home_r"];
     [self setupChildViewController:@"闪电超市" viewController:[AJFlashViewController new] image:@"v2_order" selectedImage:@"v2_order_r"];
     [self setupChildViewController:@"购物车" viewController:[AJShoppingVC new] image:@"shopCart" selectedImage:@"shopCart_r"];

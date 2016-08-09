@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseTabBarViewController.h"
 
 @interface AJMainTabBarController : UITabBarController
 

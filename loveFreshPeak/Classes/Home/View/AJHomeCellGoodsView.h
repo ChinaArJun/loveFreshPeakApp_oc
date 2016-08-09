@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "AJHomeHeadData.h"
-
+#import "AJHomeCell.h"
 @interface AJHomeCellGoodsView : UIView
 @property (nonatomic, strong) ActRow *actRow;
+@property (nonatomic, copy) ClikedCellback cellback;
 @end

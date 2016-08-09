@@ -35,6 +35,8 @@
 
 - (instancetype)initWithFrame:(CGRect)frame{
     if ([super initWithFrame:frame]) {
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(cellTapgesture)];
+        [self addGestureRecognizer:tap];
         self.backgroundColor =  [UIColor whiteColor];
         _backImageView = [[UIImageView alloc]init];
         _backImageView.contentMode = UIViewContentModeCenter;
@@ -107,6 +109,7 @@
 }
 
 - (void)setGoods:(AJGoods *)goods{
+    _goods = goods;
     _buyView.goods = goods;
     [_goodsImageView sd_setImageWithURL:[NSURL URLWithString:goods.img] placeholderImage:[UIImage imageNamed:@"v2_placeholder_square"]];
     _nameLabel.text = goods.name;
@@ -121,6 +124,11 @@
 
 - (void)setZearNeverShow:(BOOL)zearNeverShow{
     _buyView.zearNeverShow = YES;
+}
+- (void)cellTapgesture{
+    if (self.cellback) {
+        self.cellback(self.goods);
+    }
 }
 
 @end

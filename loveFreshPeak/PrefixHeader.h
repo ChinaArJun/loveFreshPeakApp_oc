@@ -15,8 +15,9 @@
 #import "MJExtension.h"
 #import "UIImageView+WebCache.h"
 #import "AJAnimationRefreshHeader.h"
+#import "BaseTabBarViewController.h"
 
-typedef void (^CompleteBlock)(id data,NSError *error);
+
 typedef NS_ENUM(NSInteger ,HeadViewItemType){
     HeadViewItemTypePage,
     HeadViewItemTypeHot,
@@ -24,8 +25,9 @@ typedef NS_ENUM(NSInteger ,HeadViewItemType){
     HeadViewItemTypeBrand,
     HeadViewItemTypeScene
 };
-
+typedef void (^CompleteBlock)(id data,NSError *error);
 typedef void(^ClikedCallback) (HeadViewItemType type,NSInteger tag);
+
 
 #define Width  [[UIScreen mainScreen] bounds].size.width
 #define Height [[UIScreen mainScreen] bounds].size.height

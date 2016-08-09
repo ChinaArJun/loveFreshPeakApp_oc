@@ -63,6 +63,8 @@
 		157322201D464A1000ABBDA9 /* AJHomeCellTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1573221F1D464A1000ABBDA9 /* AJHomeCellTitleView.m */; };
 		157322231D466B9700ABBDA9 /* UIColor+AJExpand.m in Sources */ = {isa = PBXBuildFile; fileRef = 157322221D466B9700ABBDA9 /* UIColor+AJExpand.m */; };
 		1581EBA81D0711C3003849CD /* AJHotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1581EBA71D0711C3003849CD /* AJHotView.m */; };
+		159108B11D59F44B0057AA20 /* BaseTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 159108AE1D59F44B0057AA20 /* BaseTabBarButton.m */; };
+		159108B21D59F44B0057AA20 /* BaseTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 159108B01D59F44B0057AA20 /* BaseTabBarViewController.m */; };
 		1595FC7D1D072E7C00558EFB /* AJWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1595FC7C1D072E7C00558EFB /* AJWebViewController.m */; };
 		15A77E931D4489720074E50A /* AJFooterBannerData.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A77E921D4489720074E50A /* AJFooterBannerData.m */; };
 		15CE1B451D523F2100D5B0B4 /* AJProductsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CE1B441D523F2100D5B0B4 /* AJProductsViewController.m */; };
@@ -171,6 +173,10 @@
 		157322221D466B9700ABBDA9 /* UIColor+AJExpand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+AJExpand.m"; path = "loveFreshPeak/Classes/Home/View/UIColor+AJExpand.m"; sourceTree = SOURCE_ROOT; };
 		1581EBA61D0711C3003849CD /* AJHotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJHotView.h; sourceTree = "<group>"; };
 		1581EBA71D0711C3003849CD /* AJHotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJHotView.m; sourceTree = "<group>"; };
+		159108AD1D59F44B0057AA20 /* BaseTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarButton.h; sourceTree = "<group>"; };
+		159108AE1D59F44B0057AA20 /* BaseTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarButton.m; sourceTree = "<group>"; };
+		159108AF1D59F44B0057AA20 /* BaseTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarViewController.h; sourceTree = "<group>"; };
+		159108B01D59F44B0057AA20 /* BaseTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarViewController.m; sourceTree = "<group>"; };
 		1595FC7B1D072E7C00558EFB /* AJWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJWebViewController.h; sourceTree = "<group>"; };
 		1595FC7C1D072E7C00558EFB /* AJWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJWebViewController.m; sourceTree = "<group>"; };
 		15A77E911D4489720074E50A /* AJFooterBannerData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJFooterBannerData.h; sourceTree = "<group>"; };
@@ -366,6 +372,10 @@
 				154A13C81CF3509500400E87 /* AJMainTabBarController.m */,
 				154A13C91CF3509500400E87 /* AJSelectedAdressViewController.h */,
 				154A13CA1CF3509500400E87 /* AJSelectedAdressViewController.m */,
+				159108AD1D59F44B0057AA20 /* BaseTabBarButton.h */,
+				159108AE1D59F44B0057AA20 /* BaseTabBarButton.m */,
+				159108AF1D59F44B0057AA20 /* BaseTabBarViewController.h */,
+				159108B01D59F44B0057AA20 /* BaseTabBarViewController.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -691,6 +701,7 @@
 				157322201D464A1000ABBDA9 /* AJHomeCellTitleView.m in Sources */,
 				15CE1B4B1D525A0400D5B0B4 /* AJFlashCell.m in Sources */,
 				15A77E931D4489720074E50A /* AJFooterBannerData.m in Sources */,
+				159108B11D59F44B0057AA20 /* BaseTabBarButton.m in Sources */,
 				155F49E31D58FF6500722A49 /* AJGoodsCell.m in Sources */,
 				1595FC7D1D072E7C00558EFB /* AJWebViewController.m in Sources */,
 				154A13E31CF3509500400E87 /* AJAppConst.m in Sources */,
@@ -710,6 +721,7 @@
 				15F3F9191D08331E00C9C0B1 /* AJScrollerPageView.m in Sources */,
 				157322231D466B9700ABBDA9 /* UIColor+AJExpand.m in Sources */,
 				15000F2A1D4A752300E8F9A3 /* AJBuyView.m in Sources */,
+				159108B21D59F44B0057AA20 /* BaseTabBarViewController.m in Sources */,
 				15000F241D4A6EF300E8F9A3 /* AJHomeCellGoodsView.m in Sources */,
 				154A13E41CF3509500400E87 /* AJShoppingVC.m in Sources */,
 				3F03B49D1CEF82FA0048BE6E /* main.m in Sources */,
