@@ -72,6 +72,8 @@
 		15CE1B451D523F2100D5B0B4 /* AJProductsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CE1B441D523F2100D5B0B4 /* AJProductsViewController.m */; };
 		15CE1B481D52400600D5B0B4 /* AJSupermarketSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CE1B471D52400600D5B0B4 /* AJSupermarketSource.m */; };
 		15CE1B4B1D525A0400D5B0B4 /* AJFlashCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CE1B4A1D525A0400D5B0B4 /* AJFlashCell.m */; };
+		15D415B51D60AA12007A3B19 /* AJDefaultView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D415B41D60AA12007A3B19 /* AJDefaultView.m */; };
+		15D415B81D60AD23007A3B19 /* AJShoppingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D415B71D60AD23007A3B19 /* AJShoppingCell.m */; };
 		15F3F9191D08331E00C9C0B1 /* AJScrollerPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F3F9181D08331E00C9C0B1 /* AJScrollerPageView.m */; };
 		3F03B49D1CEF82FA0048BE6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F03B49C1CEF82FA0048BE6E /* main.m */; };
 		3F03B4A01CEF82FA0048BE6E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F03B49F1CEF82FA0048BE6E /* AppDelegate.m */; };
@@ -193,6 +195,10 @@
 		15CE1B471D52400600D5B0B4 /* AJSupermarketSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AJSupermarketSource.m; path = loveFreshPeak/Classes/Flash/Controller/AJSupermarketSource.m; sourceTree = SOURCE_ROOT; };
 		15CE1B491D525A0400D5B0B4 /* AJFlashCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJFlashCell.h; sourceTree = "<group>"; };
 		15CE1B4A1D525A0400D5B0B4 /* AJFlashCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJFlashCell.m; sourceTree = "<group>"; };
+		15D415B31D60AA12007A3B19 /* AJDefaultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AJDefaultView.h; path = loveFreshPeak/Classes/CommonLib/AJDefaultView.h; sourceTree = SOURCE_ROOT; };
+		15D415B41D60AA12007A3B19 /* AJDefaultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AJDefaultView.m; path = loveFreshPeak/Classes/CommonLib/AJDefaultView.m; sourceTree = SOURCE_ROOT; };
+		15D415B61D60AD23007A3B19 /* AJShoppingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AJShoppingCell.h; path = loveFreshPeak/Classes/CommonLib/AJShoppingCell.h; sourceTree = SOURCE_ROOT; };
+		15D415B71D60AD23007A3B19 /* AJShoppingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AJShoppingCell.m; path = loveFreshPeak/Classes/CommonLib/AJShoppingCell.m; sourceTree = SOURCE_ROOT; };
 		15F3F9171D08331E00C9C0B1 /* AJScrollerPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJScrollerPageView.h; sourceTree = "<group>"; };
 		15F3F9181D08331E00C9C0B1 /* AJScrollerPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJScrollerPageView.m; sourceTree = "<group>"; };
 		3F03B4981CEF82FA0048BE6E /* loveFreshPeak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = loveFreshPeak.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -452,9 +458,9 @@
 			isa = PBXGroup;
 			children = (
 				154A13D61CF3509500400E87 /* Controller */,
+				154A13DB1CF3509500400E87 /* View */,
 				154A13D91CF3509500400E87 /* Model */,
 				154A13DA1CF3509500400E87 /* Other */,
-				154A13DB1CF3509500400E87 /* View */,
 			);
 			path = Shopping;
 			sourceTree = "<group>";
@@ -485,6 +491,10 @@
 		154A13DB1CF3509500400E87 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				15D415B31D60AA12007A3B19 /* AJDefaultView.h */,
+				15D415B41D60AA12007A3B19 /* AJDefaultView.m */,
+				15D415B61D60AD23007A3B19 /* AJShoppingCell.h */,
+				15D415B71D60AD23007A3B19 /* AJShoppingCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -731,6 +741,7 @@
 				154A13DF1CF3509500400E87 /* AJBaseViewController.m in Sources */,
 				1574DB271D6049530056E03A /* UIView+Extension.m in Sources */,
 				15F3F9191D08331E00C9C0B1 /* AJScrollerPageView.m in Sources */,
+				15D415B81D60AD23007A3B19 /* AJShoppingCell.m in Sources */,
 				157322231D466B9700ABBDA9 /* UIColor+AJExpand.m in Sources */,
 				15000F2A1D4A752300E8F9A3 /* AJBuyView.m in Sources */,
 				159108B21D59F44B0057AA20 /* BaseTabBarViewController.m in Sources */,
@@ -754,6 +765,7 @@
 				154A13F31CF362C100400E87 /* ItemCustomButton.m in Sources */,
 				1574DB2A1D60504A0056E03A /* AJProgressHUDManager.m in Sources */,
 				151007DB1D43203000F726F5 /* AJHeadLineView.m in Sources */,
+				15D415B51D60AA12007A3B19 /* AJDefaultView.m in Sources */,
 				154A13F01CF3621F00400E87 /* AppConst.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

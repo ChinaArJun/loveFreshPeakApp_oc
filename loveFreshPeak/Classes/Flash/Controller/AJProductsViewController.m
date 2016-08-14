@@ -80,7 +80,11 @@
 
 #pragma mark - --- FlashViewControllerDelegate ---
 - (void)didTableView:(UITableView *)tableView clickIndexPath:(NSIndexPath *)indexPath{
-    NSLog(@"indexPath.row = %ld",(long)indexPath.row);
+    [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:indexPath.row] animated:YES scrollPosition:UITableViewScrollPositionTop];
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    
 }
 
 @end

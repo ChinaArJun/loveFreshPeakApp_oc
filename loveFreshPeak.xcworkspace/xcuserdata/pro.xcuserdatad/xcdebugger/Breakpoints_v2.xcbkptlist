@@ -35,54 +35,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "loveFreshPeak/Classes/Home/View/AJBuyView.m"
-            timestampString = "492851639.991543"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "131"
-            endingLineNumber = "131"
-            landmarkName = "-addButtonClick:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "loveFreshPeak/Classes/Flash/AJFlashCell.m"
-            timestampString = "492370443.091156"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
-            landmarkName = "-setCategoryData:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "loveFreshPeak/Classes/Flash/AJFlashCell.m"
-            timestampString = "492370443.091156"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
-            landmarkName = "-initWithStyle:reuseIdentifier:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "loveFreshPeak/Classes/Home/Controller/AJHomeViewController.m"
             timestampString = "492852908.133998"
             startingColumnNumber = "9223372036854775807"
@@ -99,13 +51,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "loveFreshPeak/Classes/Flash/Controller/AJProductsViewController.m"
-            timestampString = "492852223.044142"
+            filePath = "loveFreshPeak/Classes/CommonLib/AJShoppingCell.m"
+            timestampString = "492878678.709889"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
-            landmarkName = "-didTableView:clickIndexPath:"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
+            landmarkName = "-shoppingSelectedClick:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -115,13 +67,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Pods/MJRefresh/MJRefresh/Custom/Header/MJRefreshGifHeader.m"
-            timestampString = "492849953.763273"
+            filePath = "loveFreshPeak/Classes/CommonLib/AJShoppingCell.m"
+            timestampString = "492878678.709889"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
-            landmarkName = "-placeSubviews"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
+            landmarkName = "-shoppingSelectedClick:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
