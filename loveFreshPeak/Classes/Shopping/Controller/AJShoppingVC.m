@@ -10,11 +10,17 @@
 #import "AJDefaultView.h"
 #import "AJShoppingCell.h"
 #import "AJUserShopCarTool.h"
+#import "AJTableFootView.h"
+#import "AJAddressView.h"
+#import "AJLightningView.h"
 
-@interface AJShoppingVC ()<UITableViewDelegate,UITableViewDataSource>
+@interface AJShoppingVC ()<UITableViewDelegate,UITableViewDataSource,AJTableFootViewDelegate>
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) AJDefaultView *defaultView;
 @property (nonatomic, strong) NSArray *dataList;
+@property (nonatomic, strong) UIView *headView;
+@property (nonatomic, strong) AJTableFootView *footView;
+
 @end
 @implementation AJShoppingVC
 - (void)dealloc{
@@ -30,12 +36,13 @@
 - (void)bulidNotifacation{
     [AJNotification addObserver:self selector:@selector(IncreaseShoppingCart) name:LFBShopCarBuyNumberDidChangeNotification object:nil];
     [AJNotification addObserver:self selector:@selector(didRemoveGoods) name:LFBShopCarDidRemoveProductNSNotification object:nil];
+    
 }
 - (void)IncreaseShoppingCart{
-    
+    self.footView.sumMoney = [[AJUserShopCarTool sharedInstance]getShopCarGoodsPrice];
 }
 - (void)didRemoveGoods{
-    
+    self.footView.sumMoney = [[AJUserShopCarTool sharedInstance]getShopCarGoodsPrice];
 }
 - (void)bulidTableView{
     self.tableView = ({
@@ -51,8 +58,21 @@
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view);
     }];
-    
-    
+    [self bulidTableHeadView];
+    [self bulidTableFootView];
+}
+- (void)bulidTableHeadView{
+    self.headView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, Width, 100)];
+    AJAddressView *address = [[AJAddressView alloc]initWithFrame:CGRectMake(0, 10, Width, 50)];
+    AJLightningView *lightning = [[AJLightningView alloc]initWithFrame:CGRectMake(0, 70, Width, 30)];
+    [self.headView addSubview:address];
+    [self.headView addSubview:lightning];
+    self.tableView.tableHeaderView = self.headView;
+}
+- (void)bulidTableFootView{
+    _footView = [[AJTableFootView alloc]initWithFrame:CGRectMake(0, 0, Width, 50)];
+    _footView.delegate = self;
+    self.tableView.tableFooterView = _footView;
 }
 - (void)bulidDefaultView{
     _defaultView = [[AJDefaultView alloc]init];
@@ -74,8 +94,9 @@
         self.tableView.hidden = NO;
         __weak typeof (self) weakSelf = self;
         [SVProgressHUD showWithStatus:@"加载中"];
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             weakSelf.dataList = [AJUserShopCarTool sharedInstance].shopCar;
+            weakSelf.footView.sumMoney = [[AJUserShopCarTool sharedInstance]getShopCarGoodsPrice];
             [weakSelf.tableView reloadData];
             [SVProgressHUD dismiss];
         });
@@ -96,6 +117,13 @@
     }
     cell.goods = self.dataList[indexPath.row];
     return cell;
+}
+
+- (void)didTableFootViewCommit{
+    UIViewController *moneyVc = [[UIViewController alloc]init];
+    moneyVc.view.backgroundColor = [UIColor whiteColor];
+    moneyVc.title = [NSString stringWithFormat:@"%.2lf",[[AJUserShopCarTool sharedInstance]getShopCarGoodsPrice]];
+    [self.navigationController pushViewController:moneyVc animated:YES];
 }
 
 @end

@@ -35,5 +35,5 @@ typedef void(^ClikedCallback) (HeadViewItemType type,NSInteger tag);
 #define AJNotification   [NSNotificationCenter defaultCenter]
 #define GrayColor [UIColor colorWithRed:239/255.0 green:239/255.0 blue:239/255.0 alpha:1]
 #define GrayColor [UIColor colorWithRed:239/255.0 green:239/255.0 blue:239/255.0 alpha:1]
-
+#define GeneralColor [UIColor colorWithRed:0.992 green:0.831 blue:0.192 alpha:1.000]
 #endif /* PrefixHeader_h */

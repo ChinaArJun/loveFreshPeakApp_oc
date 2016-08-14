@@ -31,7 +31,7 @@
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonItem:@"扫一扫" image:@"icon_black_scancode" target:self action:@selector(LeftItemButtonClicket) type:LeftItemButton];
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem barButtonItem:@"搜索" image:@"icon_search" target:self action:@selector(rightBarButtonClick) type:RightItemButton];
     
-    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:0.992 green:0.831 blue:0.192 alpha:1.000];
+    self.navigationController.navigationBar.barTintColor = GeneralColor;
 }
 
 /**
