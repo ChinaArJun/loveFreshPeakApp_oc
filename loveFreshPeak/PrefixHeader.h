@@ -12,6 +12,7 @@
 #import "AppConst.h"
 #import "Masonry.h"
 #import "SVProgressHUD.h"
+#import "UIView+Extension.h"
 #import "MJExtension.h"
 #import "UIImageView+WebCache.h"
 #import "AJAnimationRefreshHeader.h"

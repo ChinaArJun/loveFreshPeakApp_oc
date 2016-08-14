@@ -62,6 +62,7 @@
 		1573221D1D46493400ABBDA9 /* AJHomeCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1573221C1D46493400ABBDA9 /* AJHomeCategoryCell.m */; };
 		157322201D464A1000ABBDA9 /* AJHomeCellTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1573221F1D464A1000ABBDA9 /* AJHomeCellTitleView.m */; };
 		157322231D466B9700ABBDA9 /* UIColor+AJExpand.m in Sources */ = {isa = PBXBuildFile; fileRef = 157322221D466B9700ABBDA9 /* UIColor+AJExpand.m */; };
+		1574DB271D6049530056E03A /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1574DB261D6049530056E03A /* UIView+Extension.m */; };
 		1581EBA81D0711C3003849CD /* AJHotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1581EBA71D0711C3003849CD /* AJHotView.m */; };
 		159108B11D59F44B0057AA20 /* BaseTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 159108AE1D59F44B0057AA20 /* BaseTabBarButton.m */; };
 		159108B21D59F44B0057AA20 /* BaseTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 159108B01D59F44B0057AA20 /* BaseTabBarViewController.m */; };
@@ -171,6 +172,8 @@
 		1573221F1D464A1000ABBDA9 /* AJHomeCellTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJHomeCellTitleView.m; sourceTree = "<group>"; };
 		157322211D466B9700ABBDA9 /* UIColor+AJExpand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+AJExpand.h"; path = "loveFreshPeak/Classes/Home/View/UIColor+AJExpand.h"; sourceTree = SOURCE_ROOT; };
 		157322221D466B9700ABBDA9 /* UIColor+AJExpand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+AJExpand.m"; path = "loveFreshPeak/Classes/Home/View/UIColor+AJExpand.m"; sourceTree = SOURCE_ROOT; };
+		1574DB251D6049530056E03A /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		1574DB261D6049530056E03A /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		1581EBA61D0711C3003849CD /* AJHotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJHotView.h; sourceTree = "<group>"; };
 		1581EBA71D0711C3003849CD /* AJHotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJHotView.m; sourceTree = "<group>"; };
 		159108AD1D59F44B0057AA20 /* BaseTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarButton.h; sourceTree = "<group>"; };
@@ -500,6 +503,8 @@
 				153672541D4C8AC7007752A2 /* NSString+Extension.m */,
 				155F49DB1D58FC7A00722A49 /* AJAnimationRefreshHeader.h */,
 				155F49DC1D58FC7A00722A49 /* AJAnimationRefreshHeader.m */,
+				1574DB251D6049530056E03A /* UIView+Extension.h */,
+				1574DB261D6049530056E03A /* UIView+Extension.m */,
 			);
 			name = Common;
 			path = CommonLib;
@@ -591,6 +596,7 @@
 				TargetAttributes = {
 					3F03B4971CEF82FA0048BE6E = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 5JM26UDXS5;
 					};
 				};
 			};
@@ -718,6 +724,7 @@
 				3F03B4A01CEF82FA0048BE6E /* AppDelegate.m in Sources */,
 				151007E41D43E5E600F726F5 /* AJTitleIconAction.m in Sources */,
 				154A13DF1CF3509500400E87 /* AJBaseViewController.m in Sources */,
+				1574DB271D6049530056E03A /* UIView+Extension.m in Sources */,
 				15F3F9191D08331E00C9C0B1 /* AJScrollerPageView.m in Sources */,
 				157322231D466B9700ABBDA9 /* UIColor+AJExpand.m in Sources */,
 				15000F2A1D4A752300E8F9A3 /* AJBuyView.m in Sources */,
@@ -834,12 +841,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = loveFreshPeak/PrefixHeader.h;
 				INFOPLIST_FILE = loveFreshPeak/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rk.loveFreshPeak;
+				PRODUCT_BUNDLE_IDENTIFIER = aj.com.rk.loveFreshPeak;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -850,12 +860,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = loveFreshPeak/PrefixHeader.h;
 				INFOPLIST_FILE = loveFreshPeak/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rk.loveFreshPeak;
+				PRODUCT_BUNDLE_IDENTIFIER = aj.com.rk.loveFreshPeak;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

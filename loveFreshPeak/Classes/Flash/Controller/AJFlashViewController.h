@@ -8,6 +8,12 @@
 
 #import "AJSelectedAdressViewController.h"
 
-@interface AJFlashViewController : AJSelectedAdressViewController
+@protocol AJFlashViewControllerDelegate <NSObject>
 
+- (void)didTableView:(UITableView *)tableView clickIndexPath:(NSIndexPath *)indexPath;
+
+@end
+
+@interface AJFlashViewController : AJSelectedAdressViewController
+@property (nonatomic, weak) id<AJFlashViewControllerDelegate>delegate;
 @end

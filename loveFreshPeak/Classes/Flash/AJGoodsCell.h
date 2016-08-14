@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AJSupermarketSource.h"
 
 @interface AJGoodsCell : UITableViewCell
-
+@property (nonatomic, strong) AJGoods *goods;
 @end

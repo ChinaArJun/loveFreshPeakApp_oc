@@ -30,6 +30,7 @@
         UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
         tableView.delegate = self;
         tableView.dataSource = self;
+        tableView.rowHeight = 40;
         tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         tableView.showsVerticalScrollIndicator = NO;
         tableView.backgroundColor = [UIColor colorWithRed:239/255.0 green:239/255.0 blue:239/255.0 alpha:1.0];
@@ -47,6 +48,7 @@
     self.productsController = [[AJProductsViewController alloc]init];
     [self addChildViewController:self.productsController];
     [self.view addSubview:self.productsController.view];
+    self.delegate = self.productsController;
     
 }
 
@@ -57,6 +59,7 @@
         [weak.sortTableView reloadData];
         [weak.sortTableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:YES];
         weak.productsController.supermarketSouce = data;
+        NSLog(@"data = %@",data);
     }];
 }
 
@@ -69,6 +72,11 @@
     AJFlashCell *cell = [AJFlashCell cellWithTable:tableView];
     cell.categoryData = self.supermarketSouce.categories[indexPath.row];
     return cell;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if ([self.delegate respondsToSelector:@selector(didTableView:clickIndexPath:)]) {
+        [self.delegate didTableView:self.sortTableView clickIndexPath:indexPath];
+    }
 }
 
 

@@ -28,14 +28,15 @@
     _tableView = [[UITableView alloc]init];
     _tableView.delegate = self;
     _tableView.dataSource = self;
-    _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     _tableView.showsVerticalScrollIndicator = NO;
+    _tableView.contentInset = UIEdgeInsetsMake(0, 0, 120, 0);
     [self.view addSubview:_tableView];
     [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view);
     }];
     
     AJAnimationRefreshHeader *header = [AJAnimationRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(headerRefeshData)];
+    header.width = self.view.width;
     _tableView.mj_header = header;
 }
 
@@ -55,18 +56,21 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    AJGoods *goods = self.supermarketSouce.categories[indexPath.section].products[indexPath.row];
     AJGoodsCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     if (!cell) {
         cell = [[AJGoodsCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
-    cell.textLabel.text = goods.name;
-    
+    cell.goods = self.supermarketSouce.categories[indexPath.section].products[indexPath.row];
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 85;
+}
+
+#pragma mark - --- FlashViewControllerDelegate ---
+- (void)didTableView:(UITableView *)tableView clickIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"indexPath.row = %ld",(long)indexPath.row);
 }
 
 @end

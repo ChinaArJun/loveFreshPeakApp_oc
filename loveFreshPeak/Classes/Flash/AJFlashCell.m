@@ -23,7 +23,7 @@ static NSString *flashCell = @"flashCell";
         _titleLabel = [[UILabel alloc]init];
         _titleLabel.backgroundColor = [UIColor clearColor];
         _titleLabel.textAlignment = NSTextAlignmentCenter;
-        _titleLabel.font = [UIFont systemFontOfSize:16];
+        _titleLabel.font = [UIFont systemFontOfSize:15];
         _titleLabel.textColor = [UIColor grayColor];
         _titleLabel.highlightedTextColor = [UIColor blackColor];
         _backImageView = [[UIImageView alloc]init];
@@ -34,7 +34,7 @@ static NSString *flashCell = @"flashCell";
         _yellowView.hidden = YES;
         _lineView = [[UIView alloc]init];
         _lineView.backgroundColor = [UIColor darkGrayColor];
-        
+        _lineView.alpha = 0.3;
 
         [self addSubview:_backImageView];
         [self addSubview:_yellowView];
@@ -54,7 +54,7 @@ static NSString *flashCell = @"flashCell";
             make.centerY.equalTo(self);
         }];
         [_lineView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.height.equalTo(@1);
+            make.height.equalTo(@0.5);
             make.width.equalTo(self);
             make.bottom.equalTo(self);
         }];

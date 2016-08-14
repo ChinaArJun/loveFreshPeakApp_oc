@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AJBaseViewController.h"
 #import "AJSupermarketSource.h"
+#import "AJFlashViewController.h"
 
-@interface AJProductsViewController : UIViewController
+@interface AJProductsViewController : AJBaseViewController<AJFlashViewControllerDelegate>
 @property (nonatomic, strong) SuperMarketData *supermarketSouce;
 @end
