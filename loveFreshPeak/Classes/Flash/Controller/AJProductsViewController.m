@@ -13,15 +13,23 @@
 @interface AJProductsViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSArray *dataList;
+@property (nonatomic, strong) UIImageView *tableFooterView;
 @end
 
 @implementation AJProductsViewController
-- (void)loadView{
-    self.view = [[UIView alloc]initWithFrame:CGRectMake(Width * 0.25, 0, Width * 0.75, Height)];
-}
 
+- (UIImageView *)tableFooterView{
+    if (!_tableFooterView) {
+        _tableFooterView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"v2_common_footer"]];
+        _tableFooterView.frame = CGRectMake(0, 0, Width*0.75, 70);
+        _tableFooterView.contentMode = UIViewContentModeCenter;
+    }
+    return _tableFooterView;
+}
 - (void)viewDidLoad{
     [super viewDidLoad];
+    self.view = [[UIView alloc]initWithFrame:CGRectMake(Width * 0.25, 0, Width * 0.75, Height)];
+    
     [self bulidTableView];
 }
 - (void)bulidTableView{
@@ -30,14 +38,16 @@
     _tableView.dataSource = self;
     _tableView.showsVerticalScrollIndicator = NO;
     _tableView.contentInset = UIEdgeInsetsMake(0, 0, 120, 0);
+    _tableView.tableFooterView = _tableFooterView;
     [self.view addSubview:_tableView];
+   
+    
+    AJAnimationRefreshHeader *header = [AJAnimationRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(headerRefeshData)];
+    _tableView.mj_header = header;
+    
     [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view);
     }];
-    
-    AJAnimationRefreshHeader *header = [AJAnimationRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(headerRefeshData)];
-    header.width = self.view.width;
-    _tableView.mj_header = header;
 }
 
 - (void)headerRefeshData{

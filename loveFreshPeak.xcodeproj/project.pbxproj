@@ -63,6 +63,7 @@
 		157322201D464A1000ABBDA9 /* AJHomeCellTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1573221F1D464A1000ABBDA9 /* AJHomeCellTitleView.m */; };
 		157322231D466B9700ABBDA9 /* UIColor+AJExpand.m in Sources */ = {isa = PBXBuildFile; fileRef = 157322221D466B9700ABBDA9 /* UIColor+AJExpand.m */; };
 		1574DB271D6049530056E03A /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1574DB261D6049530056E03A /* UIView+Extension.m */; };
+		1574DB2A1D60504A0056E03A /* AJProgressHUDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1574DB291D60504A0056E03A /* AJProgressHUDManager.m */; };
 		1581EBA81D0711C3003849CD /* AJHotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1581EBA71D0711C3003849CD /* AJHotView.m */; };
 		159108B11D59F44B0057AA20 /* BaseTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 159108AE1D59F44B0057AA20 /* BaseTabBarButton.m */; };
 		159108B21D59F44B0057AA20 /* BaseTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 159108B01D59F44B0057AA20 /* BaseTabBarViewController.m */; };
@@ -174,6 +175,8 @@
 		157322221D466B9700ABBDA9 /* UIColor+AJExpand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+AJExpand.m"; path = "loveFreshPeak/Classes/Home/View/UIColor+AJExpand.m"; sourceTree = SOURCE_ROOT; };
 		1574DB251D6049530056E03A /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		1574DB261D6049530056E03A /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		1574DB281D60504A0056E03A /* AJProgressHUDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJProgressHUDManager.h; sourceTree = "<group>"; };
+		1574DB291D60504A0056E03A /* AJProgressHUDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJProgressHUDManager.m; sourceTree = "<group>"; };
 		1581EBA61D0711C3003849CD /* AJHotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJHotView.h; sourceTree = "<group>"; };
 		1581EBA71D0711C3003849CD /* AJHotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJHotView.m; sourceTree = "<group>"; };
 		159108AD1D59F44B0057AA20 /* BaseTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarButton.h; sourceTree = "<group>"; };
@@ -505,6 +508,8 @@
 				155F49DC1D58FC7A00722A49 /* AJAnimationRefreshHeader.m */,
 				1574DB251D6049530056E03A /* UIView+Extension.h */,
 				1574DB261D6049530056E03A /* UIView+Extension.m */,
+				1574DB281D60504A0056E03A /* AJProgressHUDManager.h */,
+				1574DB291D60504A0056E03A /* AJProgressHUDManager.m */,
 			);
 			name = Common;
 			path = CommonLib;
@@ -747,6 +752,7 @@
 				154A13DE1CF3509500400E87 /* AJBaseNavigationController.m in Sources */,
 				1513030E1D04381900C1AEC5 /* AJActivity.m in Sources */,
 				154A13F31CF362C100400E87 /* ItemCustomButton.m in Sources */,
+				1574DB2A1D60504A0056E03A /* AJProgressHUDManager.m in Sources */,
 				151007DB1D43203000F726F5 /* AJHeadLineView.m in Sources */,
 				154A13F01CF3621F00400E87 /* AppConst.m in Sources */,
 			);

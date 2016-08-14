@@ -8,6 +8,7 @@
 
 #import "AJBuyView.h"
 #import "AJUserShopCarTool.h"
+#import "AJProgressHUDManager.h"
 
 @interface AJBuyView ()
 @property (nonatomic, strong) UIButton *addBtn;
@@ -118,6 +119,8 @@
 - (void)addButtonClick:(UIButton *)btn{
     if (self.goodsIndex >= self.goods.number) {  // 添加商品  如果大于库存数
         [[NSNotificationCenter defaultCenter] postNotificationName:HomeGoodsInventoryProblem object:self.goods.name];
+        NSString *statusStr = [NSString stringWithFormat:@"%@ 库存不足了 先买这么多，过段时间再来看看吧~",self.goods.name];
+        [AJProgressHUDManager showImage:[UIImage imageNamed:@"v2_orderSuccess"] status:statusStr];
         return;
     }
     self.goodsIndex++;
@@ -134,6 +137,7 @@
     if (self.goodsIndex <= 0) {
         return;
     }
+
     self.goodsIndex--;
     self.goods.userBuyNumber = self.goodsIndex;
     if (self.goodsIndex == 0) {

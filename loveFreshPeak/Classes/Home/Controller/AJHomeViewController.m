@@ -37,6 +37,7 @@ static NSString  *expandCell = @"expandCell";
     [self addNotification];
     [self buildCollectionView];
     [self buildTableHeadView];
+    [self bulidTableViewRefresh];
 }
 - (void)addNotification{
     [AJNotification addObserver:self selector:@selector(homeTableHeadViewHeightDidChange:) name:HomeTableHeadViewHeightDidChange object:nil];
@@ -45,6 +46,7 @@ static NSString  *expandCell = @"expandCell";
     NSLog(@"height = %lf",[notification.object floatValue]);
     CGFloat height = [notification.object floatValue];
     CGFloat room = 10;
+    self.collectionView.mj_header.ignoredScrollViewContentInsetTop = height+10;
     self.homeheadView.frame = CGRectMake(0, -height-room, Width, height);
     self.collectionView.contentInset = UIEdgeInsetsMake(height+room, 0, 100, 0);
     self.collectionView.contentOffset = CGPointMake(0, -height-room);
@@ -84,7 +86,17 @@ static NSString  *expandCell = @"expandCell";
         [self.collectionView reloadData];
     }];
 }
-
+- (void)bulidTableViewRefresh{
+    AJAnimationRefreshHeader *header = [AJAnimationRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(headerRefeshData)];
+    header.gifView.frame = CGRectMake(0, 0, 100, 100);
+    _collectionView.mj_header = header;
+    [_collectionView.mj_header beginRefreshing];
+}
+- (void)headerRefeshData{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [_collectionView.mj_header endRefreshing];
+    });
+}
 - (void)showActityDetail:(HeadViewItemType)type tag:(NSInteger)tag{
     ActInfo *actInfo = self.homeHeadData.act_info[type];
     AJActivity *cativity = actInfo.act_rows[tag].activity;
