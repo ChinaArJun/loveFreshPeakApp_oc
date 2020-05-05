@@ -11,5 +11,5 @@
 ![12](https://github.com/ChinaArJun/loveFreshPeakApp_oc/blob/master/3.png)
 ![12](https://github.com/ChinaArJun/loveFreshPeakApp_oc/blob/master/4.png)
 
-#### 欢迎关注我的微信公众号
+####       欢迎关注我的微信公众号
 ![微信公众号](http://qiniu.zhequtao.com/qrcode.jpg)
