@@ -11,5 +11,9 @@
 ![12](https://github.com/ChinaArJun/loveFreshPeakApp_oc/blob/master/3.png)
 ![12](https://github.com/ChinaArJun/loveFreshPeakApp_oc/blob/master/4.png)
 
+# 运行方法
+> pod install
+> xcode run
+
 ####       欢迎关注我的微信公众号
 ![微信公众号](http://qiniu.zhequtao.com/qrcode.jpg)
